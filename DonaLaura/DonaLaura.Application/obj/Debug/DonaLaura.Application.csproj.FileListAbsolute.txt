@@ -1,0 +1,6 @@
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Application.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Application.pdb
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csprojResolveAssemblyReference.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.pdb

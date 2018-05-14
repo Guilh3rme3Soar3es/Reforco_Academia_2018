@@ -1,0 +1,5 @@
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra.Data\bin\Debug\DonaLaura.Infra.Data.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra.Data\bin\Debug\DonaLaura.Infra.Data.pdb
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra.Data\obj\Debug\DonaLaura.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra.Data\obj\Debug\DonaLaura.Infra.Data.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra.Data\obj\Debug\DonaLaura.Infra.Data.pdb

@@ -1,0 +1,16 @@
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\DonaLaura.Integration.Tests.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\DonaLaura.Integration.Tests.pdb
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\obj\Debug\DonaLaura.Integration.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\obj\Debug\DonaLaura.Integration.Tests.csproj.CopyComplete
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\obj\Debug\DonaLaura.Integration.Tests.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Integration.Tests\obj\Debug\DonaLaura.Integration.Tests.pdb
