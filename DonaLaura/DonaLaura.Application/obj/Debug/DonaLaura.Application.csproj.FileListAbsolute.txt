@@ -4,3 +4,12 @@ C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csproj.CoreCompileInputs.cache
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.dll
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Application.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Application.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\bin\Debug\DonaLaura.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.csproj.CopyComplete
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Application\obj\Debug\DonaLaura.Application.pdb

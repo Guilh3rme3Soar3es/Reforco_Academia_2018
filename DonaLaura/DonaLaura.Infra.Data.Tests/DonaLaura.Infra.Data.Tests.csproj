@@ -61,13 +61,27 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Products\ProductRepositoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\Products\" />
+    <ProjectReference Include="..\DonaLaura.Common.Tests\DonaLaura.Common.Tests.csproj">
+      <Project>{1CDD26DB-2E27-4F50-84D1-BDE2E8D7A055}</Project>
+      <Name>DonaLaura.Common.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DonaLaura.Domain\DonaLaura.Domain.csproj">
+      <Project>{09E4D28C-69A6-4ABE-9F83-E0CAEFA2CB8B}</Project>
+      <Name>DonaLaura.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DonaLaura.Infra.Data\DonaLaura.Infra.Data.csproj">
+      <Project>{DE19A874-4E32-4322-950B-9CBC1136B337}</Project>
+      <Name>DonaLaura.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

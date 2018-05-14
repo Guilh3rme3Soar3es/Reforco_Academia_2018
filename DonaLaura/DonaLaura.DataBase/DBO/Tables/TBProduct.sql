@@ -7,7 +7,7 @@
     [Fabrication] DATE NOT NULL, 
     [Expiration] DATE NOT NULL, 
     [IsAvaliable] BIT NOT NULL,
-	CONSTRAINT [PK_Postss] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED
 
 (
 	[IdProduct] ASC

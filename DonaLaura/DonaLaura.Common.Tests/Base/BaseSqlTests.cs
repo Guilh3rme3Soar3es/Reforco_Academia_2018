@@ -9,8 +9,8 @@ namespace DonaLaura.Common.Tests.Base
 {
     public static class BaseSqlTests
     {
-        private const string RECREATE_POST_TABLE = "TRUNCATE TABLE [dbo].[Products] ";
-        private const string INSERT_POST = "INSERT INTO Products(Message,PostDate) VALUES ('Post de Teste', GETDATE())";//arruamar
+        private const string RECREATE_POST_TABLE = "TRUNCATE TABLE [dbo].[TBProduct]";
+        private const string INSERT_POST = "INSERT INTO TBProduct(Name,CostPrice,SalePrice,Fabrication,Expiration,IsAvaliable) VALUES ('Produto de Teste', 1.00, 2.00, GETDATE(), GETDATE(), 0)";//arruamar
 
         public static void SeedDatabase()
         {

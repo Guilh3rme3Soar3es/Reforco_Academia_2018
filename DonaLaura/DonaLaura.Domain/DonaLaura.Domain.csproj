@@ -44,6 +44,7 @@
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
+    <Compile Include="Features\Products\IProductRepository.cs" />
     <Compile Include="Features\Products\Product.cs" />
     <Compile Include="Features\Products\ProductCostPriceOverFlow.cs" />
     <Compile Include="Features\Products\ProductExpirationInvalidException.cs" />

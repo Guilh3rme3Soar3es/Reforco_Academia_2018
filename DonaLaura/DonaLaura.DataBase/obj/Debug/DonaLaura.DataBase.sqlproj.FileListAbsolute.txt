@@ -4,3 +4,9 @@ C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.DataBase\obj\Debug\Do
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.DataBase\obj\Debug\DonaLaura.DataBase.pdb
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.DataBase\bin\Debug\DonaLaura.DataBase.dll
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.DataBase\bin\Debug\DonaLaura.DataBase.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\bin\Debug\DonaLaura.DataBase.dacpac
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\bin\Debug\DonaLaura.DataBase.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\bin\Debug\DonaLaura.DataBase.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\obj\Debug\DonaLaura.DataBase.sqlprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\obj\Debug\DonaLaura.DataBase.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.DataBase\obj\Debug\DonaLaura.DataBase.pdb
