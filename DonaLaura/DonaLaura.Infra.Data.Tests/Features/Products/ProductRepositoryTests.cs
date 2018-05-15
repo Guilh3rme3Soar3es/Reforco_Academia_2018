@@ -220,6 +220,8 @@ namespace DonaLaura.Infra.Data.Tests.Features.Products
         [Test]
         public void Product_TestRepository_GetAll__ShouldBeNull()
         {
+            BaseSqlTests.Helper_RemoveOrder();
+
             Product productToDelete = ObjectMother.GetProductOk();
             productToDelete.Id = 1;
             _repository.Delete(productToDelete);
@@ -232,6 +234,7 @@ namespace DonaLaura.Infra.Data.Tests.Features.Products
         [Test]
         public void Product_TestRepository_DeleteProduct__ShouldBeOk()
         {
+            BaseSqlTests.Helper_RemoveOrder();
             Product productToDelete = ObjectMother.GetProductOk();
             productToDelete.Id = 1;
 

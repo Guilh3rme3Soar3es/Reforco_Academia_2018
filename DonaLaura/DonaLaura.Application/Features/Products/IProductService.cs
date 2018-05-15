@@ -9,7 +9,7 @@ namespace DonaLaura.Application.Features.Products
 {
     public interface IProductService
     {
-        Product PostAdd(Product product);
+        Product Add(Product product);
         Product Update(Product product);
         Product Get(long id);
         IEnumerable<Product> GetAll();

@@ -1,6 +1,8 @@
-﻿using DonaLaura.Application.Features.Products;
+﻿using DonaLaura.Application.Features.Orders;
+using DonaLaura.Application.Features.Products;
 using DonaLaura.Common.Tests.Base;
 using DonaLaura.Domain.Exceptions;
+using DonaLaura.Domain.Features.Orders;
 using DonaLaura.Domain.Features.Products;
 using FluentAssertions;
 using Moq;
@@ -16,17 +18,34 @@ namespace DonaLaura.Application.Tests.Features.Products
     [TestFixture]
     public class ProductServiceTests
     {
-        Product _product;
-        Product _invalidProduct;
-        Mock<IProductRepository> _mockRepository;
-        ProductService _servico;
+        private Product _product;
+        private Order _order;
+        private Product _invalidProduct;
+        private Mock<IProductRepository> _mockRepository;
+        private Mock<IOrderService> _mockOrderService;
+        private ProductService _servico;
 
         [SetUp]
         public void Initialize()
         {
+            _mockOrderService = new Mock<IOrderService>();
+            _order = ObjectMother.GetOrderOk(_product);
+
             _product = ObjectMother.GetProductOk();
             _mockRepository = new Mock<IProductRepository>();
-            _servico = new ProductService(_mockRepository.Object);
+            _servico = new ProductService(_mockRepository.Object, _mockOrderService.Object);
+        }
+
+        //Conferir com Guilherme ou Thiago se está correto usar dessa forma... 
+        [Test]
+        public void TEste()
+        {
+            _mockRepository.Setup(pr => pr.Delete(_product));
+            _mockOrderService.Setup(sv => sv.GetByProduct(_product.Id)).Returns(new List<Order> { _order });
+
+            Action comparation = () => _servico.Delete(_product);
+
+            comparation.Should().Throw<ProductWithDependecesException>();
         }
 
         [Test]
@@ -34,7 +53,7 @@ namespace DonaLaura.Application.Tests.Features.Products
         {
             _mockRepository.Setup(pr => pr.Save(_product)).Returns(_product);
 
-            Product resultadoEncontrado = _servico.PostAdd(_product);
+            Product resultadoEncontrado = _servico.Add(_product);
 
             _mockRepository.Verify(pr => pr.Save(_product));
             resultadoEncontrado.Id.Should().BeGreaterThan(0);
@@ -46,7 +65,7 @@ namespace DonaLaura.Application.Tests.Features.Products
             _product.Name = "";
             _mockRepository.Setup(pr => pr.Save(_product));
 
-            Action comparation = () => _servico.PostAdd(_product);
+            Action comparation = () => _servico.Add(_product);
 
             comparation.Should().Throw<ProductNameNullOrEmptyException>();
             _mockRepository.VerifyNoOtherCalls();

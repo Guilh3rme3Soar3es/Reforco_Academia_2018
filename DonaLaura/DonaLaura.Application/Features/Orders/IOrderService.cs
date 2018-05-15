@@ -9,12 +9,12 @@ namespace DonaLaura.Application.Features.Orders
 {
     public interface IOrderService
     {
-        Order PostAdd(Order order);
+        Order Add(Order order);
         Order Update(Order order);
         Order Get(long id);
         IEnumerable<Order> GetAll();
         void Delete(Order order);
 
-        IEnumerable<Order> GetByProduct(int idProduct);
+        IEnumerable<Order> GetByProduct(long idProduct);
     }
 }

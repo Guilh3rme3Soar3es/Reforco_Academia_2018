@@ -44,8 +44,10 @@
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
+    <Compile Include="Features\Orders\IOrderRepository.cs" />
     <Compile Include="Features\Orders\Order.cs" />
     <Compile Include="Features\Orders\OrderAmountZeroException.cs" />
+    <Compile Include="Features\Orders\OrderClientNameOverFlow.cs" />
     <Compile Include="Features\Orders\OrderClientNameShortException.cs" />
     <Compile Include="Features\Orders\OrderClientNullOrEmptyException.cs" />
     <Compile Include="Features\Orders\OrderProductNullException.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="Features\Products\ProductNameNullOrEmptyException.cs" />
     <Compile Include="Features\Products\ProductNameOverFlowException.cs" />
     <Compile Include="Features\Products\ProductNameShortException.cs" />
+    <Compile Include="Features\Products\ProductWithDependecesException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

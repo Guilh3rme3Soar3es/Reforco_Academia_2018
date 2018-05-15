@@ -25,6 +25,8 @@ namespace DonaLaura.Domain.Features.Orders
                 throw new OrderClientNullOrEmptyException();
             if (Client.Length <= 3)
                 throw new OrderClientNameShortException();
+            if (Client.Length >= 100)
+                throw new OrderClientNameOverFlowException();
             if (product == null)
                 throw new OrderProductNullException();
             //else

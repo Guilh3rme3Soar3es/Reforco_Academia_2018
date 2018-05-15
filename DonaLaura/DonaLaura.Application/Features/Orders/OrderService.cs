@@ -3,40 +3,102 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DonaLaura.Domain.Exceptions;
 using DonaLaura.Domain.Features.Orders;
 
 namespace DonaLaura.Application.Features.Orders
 {
     public class OrderService : IOrderService
     {
+        private IOrderRepository _orderRepository;
+        public OrderService(IOrderRepository orderRepository)
+        {
+            _orderRepository = orderRepository;
+        }
         public void Delete(Order order)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (order.Id <= 0)
+                    throw new IdentifierUndefinedException();
+                _orderRepository.Delete(order);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Order Get(long id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (id <= 0)
+                    throw new IdentifierUndefinedException();
+                return _orderRepository.Get(id);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public IEnumerable<Order> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _orderRepository.GetAll();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        public Order PostAdd(Order order)
+        public Order Add(Order order)
         {
-            throw new NotImplementedException();
+            try
+            {
+                order.Validate();
+                return _orderRepository.Save(order);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Order Update(Order order)
         {
-            throw new NotImplementedException();
+            try
+            {
+                order.Validate();
+                return _orderRepository.Update(order);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        public IEnumerable<Order> GetByProduct(int idProduct)
+        public IEnumerable<Order> GetByProduct(long idProduct)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (idProduct <= 0)
+                    throw new IdentifierUndefinedException();
+                return _orderRepository.GetByProduct(idProduct);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Orders\IOrderService.cs" />
+    <Compile Include="Features\Orders\OrderService.cs" />
     <Compile Include="Features\Products\IProductService.cs" />
     <Compile Include="Features\Products\ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Orders\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DonaLaura.Domain\DonaLaura.Domain.csproj">
       <Project>{09E4D28C-69A6-4ABE-9F83-E0CAEFA2CB8B}</Project>

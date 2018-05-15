@@ -22,7 +22,7 @@ namespace DonaLaura.Infra.Data.Features.Products
                                                             "SalePrice = @SalePrice, " +
                                                             "Fabrication = @Fabrication, " +
                                                             "Expiration = @Expiration, " +
-                                                            "IsAvaliable = @IsAvaliable";
+                                                            "IsAvaliable = @IsAvaliable WHERE IdProduct = @IdProduct";
 
         private const string _getAll = "SELECT * FROM TBProduct";
 

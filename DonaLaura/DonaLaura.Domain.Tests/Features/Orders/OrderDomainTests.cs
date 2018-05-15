@@ -70,6 +70,16 @@ namespace DonaLaura.Domain.Tests.Features.Orders
         }
 
         [Test]
+        public void Order_TestDomain_OrderClientNameOverFlow_ShouldBeFail()
+        {
+            _order.Client = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa";
+
+            Action comparation = () => _order.Validate();
+
+            comparation.Should().Throw<OrderClientNameOverFlowException>();
+        }
+
+        [Test]
         public void Order_TestDomain_OrderProductNull_ShouldBeFail()
         {
             _order.product = null;

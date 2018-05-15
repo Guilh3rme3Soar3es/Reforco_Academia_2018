@@ -14,6 +14,6 @@ namespace DonaLaura.Domain.Features.Orders
         IEnumerable<Order> GetAll();
         void Delete(Order order);
 
-        IEnumerable<Order> GetByProduct(int idProduct);
+        IEnumerable<Order> GetByProduct(long idProduct);
     }
 }

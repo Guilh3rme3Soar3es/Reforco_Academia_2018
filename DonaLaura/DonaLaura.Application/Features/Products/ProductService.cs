@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DonaLaura.Application.Features.Orders;
 using DonaLaura.Domain.Exceptions;
 using DonaLaura.Domain.Features.Products;
 
@@ -11,14 +12,22 @@ namespace DonaLaura.Application.Features.Products
     public class ProductService : IProductService
     {
         private IProductRepository _repository;
+        private IOrderService _orderService;
         public ProductService(IProductRepository repository)
         {
             _repository = repository;
+        }
+        public ProductService(IProductRepository repository, IOrderService orderService)
+        {
+            _repository = repository;
+            _orderService = orderService;
         }
         public void Delete(Product product)
         {
             try
             {
+                if (_orderService.GetByProduct(product.Id).Count() > 0)
+                    throw new ProductWithDependecesException();
                 if (product.Id < 0)
                     throw new IdentifierUndefinedException();
                 _repository.Delete(product);
@@ -57,7 +66,7 @@ namespace DonaLaura.Application.Features.Products
             }
         }
 
-        public Product PostAdd(Product product)
+        public Product Add(Product product)
         {
             try
             {
