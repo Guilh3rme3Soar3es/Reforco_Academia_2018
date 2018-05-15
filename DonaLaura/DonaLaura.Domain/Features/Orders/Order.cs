@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DonaLaura.Domain.Features.Orders
 {
-    public  class Order : Entity
+    public class Order : Entity
     {
         public virtual string Client { get; set; }
 
@@ -27,6 +27,17 @@ namespace DonaLaura.Domain.Features.Orders
                 throw new OrderClientNameShortException();
             if (product == null)
                 throw new OrderProductNullException();
+            //else
+            //    product.Validate();
+            if (Amount <= 0)
+                throw new OrderAmountZeroException();
+        }
+
+        public void GetProfit()
+        {
+            //verificar necessidade...
+            product.Validate();
+            Profit = (product.SalePrice - product.CostPrice) * Amount;
         }
     }
 }

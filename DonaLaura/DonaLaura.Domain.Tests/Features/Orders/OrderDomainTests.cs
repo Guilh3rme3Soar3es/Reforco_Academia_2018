@@ -78,5 +78,42 @@ namespace DonaLaura.Domain.Tests.Features.Orders
 
             comparation.Should().Throw<OrderProductNullException>();
         }
+
+        [Test]
+        public void Order_TestDomain_OrderAmountZero_ShouldBeFail()
+        {
+            _order.Amount = 0;
+
+            Action comparation = () => _order.Validate();
+
+            comparation.Should().Throw<OrderAmountZeroException>();
+        }
+
+
+        //verificar necessidade...
+        //[Test]
+        public void TesteDeProduct()
+        {
+            _fakeProduct.Setup(m => m.Name);
+            _fakeProduct.Setup(m => m.Validate());
+            _order.product = _fakeProduct.Object;
+
+            Action comparation = () => _order.Validate();
+
+            _fakeProduct.Verify(m => m.Validate());
+            comparation.Should().Throw<ProductNameNullOrEmptyException>();
+        }
+
+        [Test]
+        public void Order_TestDomain_OrderGetProfit_ShouldBeOk()
+        {
+            _fakeProduct.Setup(m => m.SalePrice).Returns(300.00);
+            _fakeProduct.Setup(m => m.CostPrice).Returns(150.00);
+            _order.product = _fakeProduct.Object;
+
+            _order.GetProfit();
+
+            _order.Profit.Should().Be(150.00);
+        }
     }
 }

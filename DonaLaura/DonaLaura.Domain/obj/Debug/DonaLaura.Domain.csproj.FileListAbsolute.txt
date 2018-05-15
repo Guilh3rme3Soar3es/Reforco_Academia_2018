@@ -6,7 +6,6 @@ C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Domain\obj\Debug\Dona
 C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Domain\obj\Debug\DonaLaura.Domain.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\bin\Debug\DonaLaura.Domain.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\bin\Debug\DonaLaura.Domain.pdb
-H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\obj\Debug\DonaLaura.Domain.csprojResolveAssemblyReference.cache
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\obj\Debug\DonaLaura.Domain.csproj.CoreCompileInputs.cache
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\obj\Debug\DonaLaura.Domain.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Domain\obj\Debug\DonaLaura.Domain.pdb

@@ -1,4 +1,5 @@
-﻿using DonaLaura.Domain.Features.Products;
+﻿using DonaLaura.Domain.Features.Orders;
+using DonaLaura.Domain.Features.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,18 @@ namespace DonaLaura.Common.Tests.Base
                 Manufacture = DateTime.Now.AddDays(-1),
                 Expiration = DateTime.Now.AddDays(+1),
                 IsAvaliable = true
+            };
+        }
+
+        public static Order GetOrderOk(Product product)
+        {
+            return new Order
+            {
+                Id = 2,
+                Client = "José da Silva",
+                product = product,
+                Amount = 1,
+                Profit = 100.00,
             };
         }
     }

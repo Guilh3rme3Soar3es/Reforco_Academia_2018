@@ -49,15 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseSqlTests.cs" />
-    <Compile Include="Base\ObjectMother.cs" />
+    <Compile Include="Features\Orders\ObjectMother.cs" />
+    <Compile Include="Features\Products\ObjectMother.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Posts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DonaLaura.Domain\DonaLaura.Domain.csproj">
       <Project>{09E4D28C-69A6-4ABE-9F83-E0CAEFA2CB8B}</Project>

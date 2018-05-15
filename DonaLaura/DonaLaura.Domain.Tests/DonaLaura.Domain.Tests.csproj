@@ -71,7 +71,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Orders\ObjectMother.cs" />
     <Compile Include="Features\Orders\OrderDomainTests.cs" />
     <Compile Include="Features\Products\ProdutcDomainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

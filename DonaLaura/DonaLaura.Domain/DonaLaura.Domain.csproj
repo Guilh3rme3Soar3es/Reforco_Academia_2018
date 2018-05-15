@@ -45,6 +45,7 @@
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
     <Compile Include="Features\Orders\Order.cs" />
+    <Compile Include="Features\Orders\OrderAmountZeroException.cs" />
     <Compile Include="Features\Orders\OrderClientNameShortException.cs" />
     <Compile Include="Features\Orders\OrderClientNullOrEmptyException.cs" />
     <Compile Include="Features\Orders\OrderProductNullException.cs" />
