@@ -44,6 +44,10 @@
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
+    <Compile Include="Features\Orders\Order.cs" />
+    <Compile Include="Features\Orders\OrderClientNameShortException.cs" />
+    <Compile Include="Features\Orders\OrderClientNullOrEmptyException.cs" />
+    <Compile Include="Features\Orders\OrderProductNullException.cs" />
     <Compile Include="Features\Products\IProductRepository.cs" />
     <Compile Include="Features\Products\Product.cs" />
     <Compile Include="Features\Products\ProductCostPriceOverFlow.cs" />
@@ -53,8 +57,6 @@
     <Compile Include="Features\Products\ProductNameShortException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Orders\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

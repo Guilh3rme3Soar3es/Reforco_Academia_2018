@@ -9,17 +9,17 @@ namespace DonaLaura.Domain.Features.Products
 {
     public class Product : Entity
     {
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        public double CostPrice { get; set; }
+        public virtual double CostPrice { get; set; }
 
-        public double SalePrice { get; set; }
+        public virtual double SalePrice { get; set; }
 
-        public DateTime Manufacture { get; set; }
+        public virtual DateTime Manufacture { get; set; }
 
-        public DateTime Expiration { get; set; }
+        public virtual DateTime Expiration { get; set; }
 
-        public bool IsAvaliable { get; set; }
+        public virtual bool IsAvaliable { get; set; }
 
         public override void Validate()
         {
