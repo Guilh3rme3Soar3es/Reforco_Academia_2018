@@ -1,0 +1,14 @@
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.dll.config
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.pdb
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.csprojResolveAssemblyReference.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.dll
+C:\Users\Guilherme Soares\source\repos\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.dll.config
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\bin\Debug\DonaLaura.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\DonaLaura\DonaLaura.Infra\obj\Debug\DonaLaura.Infra.pdb
