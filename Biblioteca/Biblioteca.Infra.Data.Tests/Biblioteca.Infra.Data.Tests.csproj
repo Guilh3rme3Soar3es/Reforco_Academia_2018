@@ -74,6 +74,14 @@
       <Project>{7EACCCE7-D70A-4245-B1BB-1928CAD113D0}</Project>
       <Name>Biblioteca.Common.Tests</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Biblioteca.Domain\Biblioteca.Domain.csproj">
+      <Project>{7F8ECE9E-E3FA-44E0-9EEC-7D31AE21D67C}</Project>
+      <Name>Biblioteca.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biblioteca.Infra.Data\Biblioteca.Infra.Data.csproj">
+      <Project>{00BD0B7D-5987-418B-ADDF-18F59BC8B2AD}</Project>
+      <Name>Biblioteca.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

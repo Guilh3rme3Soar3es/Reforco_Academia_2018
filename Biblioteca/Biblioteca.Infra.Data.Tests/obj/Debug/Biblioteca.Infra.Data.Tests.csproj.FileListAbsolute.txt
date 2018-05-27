@@ -36,3 +36,5 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infr
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data.Tests\bin\Debug\Biblioteca.Domain.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data.Tests\bin\Debug\Biblioteca.Infra.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data.Tests\bin\Debug\Biblioteca.Infra.dll.config
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data.Tests\bin\Debug\Biblioteca.Infra.Data.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data.Tests\bin\Debug\Biblioteca.Infra.Data.pdb

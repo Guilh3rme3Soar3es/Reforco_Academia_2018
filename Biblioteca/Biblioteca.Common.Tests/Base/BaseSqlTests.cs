@@ -28,5 +28,10 @@ namespace Biblioteca.Common.Tests.Base
             Db.Update(RECREATE_LOAN_TABLE);
             Db.Update(RECREATE_BOOK_TABLE);
         }
+
+        public static void ClearTBLoan()
+        {
+            Db.Update(RECREATE_LOAN_TABLE);
+        }
     }
 }

@@ -7,3 +7,6 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infr
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Infra.dll.config

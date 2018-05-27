@@ -14,8 +14,8 @@ namespace Biblioteca.Infra.Data.Features.Books
     {
 
         #region#Scripts
-        private const string _insert = "INSERT INTO TBBook (Title, Theme, Author, Volume, PostDate, IsAvaliable) " +
-                                    "VALUES (@Title, @Theme, @Author, @Volume, @PostDate, @IsAvaliable)";
+        private const string _insert = "INSERT INTO TBBook (Title, Theme, Author, Volume, DatePost, IsAvaliable) " +
+                                    "VALUES (@Title, @Theme, @Author, @Volume, @DatePost, @IsAvaliable)";
 
         private const string _getById = "SELECT * FROM TBBook WHERE IdBook = @IdBook";
 
@@ -23,7 +23,7 @@ namespace Biblioteca.Infra.Data.Features.Books
                                                             "Theme = @Theme, " +
                                                             "Author = @Author, " +
                                                             "Volume = @Volume, " +
-                                                            "PostDate = @PostDate, " +
+                                                            "DatePost = @DatePost, " +
                                                             "IsAvaliable = @IsAvaliable WHERE IdBook = @IdBook";
 
         private const string _getAll = "SELECT * FROM TBBook";
@@ -34,14 +34,14 @@ namespace Biblioteca.Infra.Data.Features.Books
 
         public void Delete(Book book)
         {
-            if (book.Id < 0)
+            if (book.Id <= 0)
                 throw new IdentifierUndefinedException();
             Db.Delete(_delete, new object[] { "@IdBook", book.Id });
         }
 
         public Book Get(long id)
         {
-            if (id < 0)
+            if (id <= 0)
                 throw new IdentifierUndefinedException();
             return Db.Get(_getById, Make, new object[] { "@IdBook ", id });
 
@@ -62,7 +62,7 @@ namespace Biblioteca.Infra.Data.Features.Books
 
         public Book Update(Book book)
         {
-            if (book.Id < 0)
+            if (book.Id <= 0)
                 throw new IdentifierUndefinedException();
             book.Validate();
 
@@ -79,7 +79,7 @@ namespace Biblioteca.Infra.Data.Features.Books
                Author = reader["Author"].ToString(),
                Theme = reader["Theme"].ToString(),
                Volume = Convert.ToInt32(reader["Volume"]),
-               PostDate = Convert.ToDateTime(reader["PostDate"]),
+               PostDate = Convert.ToDateTime(reader["DatePost"]),
                IsAvaliable = Convert.ToBoolean(reader["IsAvaliable"])
 
            };
@@ -93,7 +93,7 @@ namespace Biblioteca.Infra.Data.Features.Books
                 "@Theme", book.Theme,
                 "@Author", book.Author,
                 "@Volume", book.Volume,
-                "@PostDate", book.PostDate,
+                "@DatePost", book.PostDate,
                 "@IsAvaliable" , book.IsAvaliable
 
             };
