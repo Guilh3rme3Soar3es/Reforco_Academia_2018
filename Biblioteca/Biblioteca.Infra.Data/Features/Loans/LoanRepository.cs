@@ -16,13 +16,13 @@ namespace Biblioteca.Infra.Data.Features.Loans
 
         #region#Scripts
 
-        private readonly string _insert = "INSERT INTO TBLoan (NameClient, DateDevolution, BookId) VALUES (@NameClient,@DateDevolution,@BookId)";
+        private readonly string _insert = "INSERT INTO TBLoan (NameClient, DateDevolution, BookId) VALUES (@NameClient,@DateDevolution,@IdBook)";
 
-        private const string _getById = "SELECT l.*, b.Title AS book_Title, b.Theme AS book_Theme, b.Author AS book_Author, b.Volume AS book_Volume, b.DatePost AS book_DatePost, b.IsAvaliable AS book_IsAvaliable FROM TBLoan AS l INNER JOIN TBBook AS b ON (l.BookId = b.IdBook) WHERE l.IdLoan = @IdaLoan";
+        private const string _getById = "SELECT l.*, b.Title AS book_Title, b.Theme AS book_Theme, b.Author AS book_Author, b.Volume AS book_Volume, b.DatePost AS book_DatePost, b.IsAvaliable AS book_IsAvaliable FROM TBLoan AS l INNER JOIN TBBook AS b ON (l.BookId = b.IdBook) WHERE l.IdLoan = @IdLoan";
 
         private const string _update = "UPDATE TBLoan SET NameClient = @NameClient, " +
                                                            "DateDevolution = @DateDevolution," +
-                                                           "BookId = @BookId," +
+                                                           "BookId = @IdBook" +
                                                            " WHERE IdLoan = @IdLoan";
 
         private const string _getAll = "SELECT * FROM TBLoan";
@@ -39,7 +39,7 @@ namespace Biblioteca.Infra.Data.Features.Loans
         {
             if (book.Id <= 0)
                 throw new IdentifierUndefinedException();
-            Db.Delete(_delete, new object[] { "@IdOrder", book.Id });
+            Db.Delete(_delete, new object[] { "@IdLoan", book.Id });
         }
 
         public Loan Get(long id)

@@ -120,6 +120,50 @@ namespace Biblioteca.Domain.Tests.Features.Books
         }
 
         [Test]
+        public void Book_TestDomain_BookAuthorNull_ShouldBeFail()
+        {
+            _book = ObjectMother.GetBookOK();
+            _book.Author = null;
+
+            Action comparation = () => _book.Validate();
+
+            comparation.Should().Throw<BookAuthorNullOrEmptyException>();
+        }
+
+        [Test]
+        public void Book_TestDomain_BookAuthorEmpty_ShouldBeFail()
+        {
+            _book = ObjectMother.GetBookOK();
+            _book.Author = "";
+
+            Action comparation = () => _book.Validate();
+
+            comparation.Should().Throw<BookAuthorNullOrEmptyException>();
+        }
+
+        [Test]
+        public void Book_TestDomain_BookWithShortNameAuthor_ShouldBeFail()
+        {
+            _book = ObjectMother.GetBookOK();
+            _book.Author = "ABC";
+
+            Action comparation = () => _book.Validate();
+
+            comparation.Should().Throw<BookShortAuthorException>();
+        }
+
+        [Test]
+        public void Book_TestDomain_BookNameAuthorOverFlow_ShouldBeFail()
+        {
+            _book = ObjectMother.GetBookOK();
+            _book.Author = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa";
+
+            Action comparation = () => _book.Validate();
+
+            comparation.Should().Throw<BookAuthorOverFlowException>();
+        }
+
+        [Test]
         public void Book_TestDomain_BookInvalidVolume_ShouldBeFail()
         {
             _book = ObjectMother.GetBookOK();

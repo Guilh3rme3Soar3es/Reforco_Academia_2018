@@ -83,6 +83,18 @@ namespace Biblioteca.Domain.Tests.Features.Loans
         }
 
         [Test]
+        public void Loan_DomainTests_LoanWithInvalidDateDevolution_ShouldBeFail()
+        {
+            _fakeBook.Setup(b => b.IsAvaliable).Returns(true);
+            _loan = ObjectMother.GetLoanOk(_fakeBook.Object);
+            _loan.DateDevolution = DateTime.Now.AddDays(-1);
+
+            Action comparation = () => _loan.Validate();
+
+            comparation.Should().Throw<LoanInvalidDateDevolutionException>();
+        }
+
+        [Test]
         public void Loan_DomainTests_LoanWithBookNotAvaliable_ShouldBeFail()
         {
             _fakeBook.Setup(b => b.IsAvaliable).Returns(false);

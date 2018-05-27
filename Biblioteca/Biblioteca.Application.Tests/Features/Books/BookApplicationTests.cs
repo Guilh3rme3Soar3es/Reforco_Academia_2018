@@ -55,6 +55,7 @@ namespace Biblioteca.Application.Tests.Features.Books
 
             Action comparation = () => _bookService.Add(_book);
 
+            comparation.Should().Throw<BookAuthorNullOrEmptyException>();
             _mockBookRepository.VerifyNoOtherCalls();
         }
 

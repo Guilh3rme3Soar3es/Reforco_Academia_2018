@@ -41,13 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Class1.cs" />
+    <Compile Include="Common\Entity.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Features\Books\Book.cs" />
+    <Compile Include="Features\Books\BookAuthorNullOrEmptyException.cs" />
+    <Compile Include="Features\Books\BookAuthorOverFlowException.cs" />
     <Compile Include="Features\Books\BookInvalidPostDateException.cs" />
     <Compile Include="Features\Books\BookInvalidVolumeException.cs" />
+    <Compile Include="Features\Books\BookShortAuthorException.cs" />
     <Compile Include="Features\Books\BookShortThemeException.cs" />
     <Compile Include="Features\Books\BookShortTitleException.cs" />
     <Compile Include="Features\Books\BookThemeNullOremptyException.cs" />

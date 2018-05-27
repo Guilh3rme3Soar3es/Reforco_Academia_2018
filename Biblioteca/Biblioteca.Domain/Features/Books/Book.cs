@@ -42,6 +42,18 @@ namespace Biblioteca.Domain.Features.Books
             {
                 throw new BookThemeOverFlowException();
             }
+            if (String.IsNullOrEmpty(Author))
+            {
+                throw new BookAuthorNullOrEmptyException();
+            }
+            else if (Author.Length < 4)
+            {
+                throw new BookShortAuthorException();
+            }
+            else if (Author.Length > 100)
+            {
+                throw new BookAuthorOverFlowException();
+            } 
             if (Volume <= 0)
                 throw new BookInvalidVolumeException();
             if (PostDate > DateTime.Now)
