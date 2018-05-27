@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Biblioteca.Application.Features.Loans;
+using Biblioteca.Domain.Exceptions;
 using Biblioteca.Domain.Features.Books;
 
 namespace Biblioteca.Application.Features.Books
@@ -21,26 +22,37 @@ namespace Biblioteca.Application.Features.Books
 
         public Book Add(Book book)
         {
+            book.Validate();
+            return _bookRepository.Save(book);
         }
 
         public void Delete(Book book)
         {
-            throw new NotImplementedException();
+            if (book.Id <= 0)
+                throw new IdentifierUndefinedException();
+            if (_loanService.GetByBook(book.Id).Count() > 0)
+                throw new BookWithRelatedLoanException();
+            _bookRepository.Delete(book);
         }
 
         public Book Get(long id)
         {
-            throw new NotImplementedException();
+            if (id <= 0)
+                throw new IdentifierUndefinedException();
+            return _bookRepository.Get(id);
         }
 
         public IEnumerable<Book> GetAll()
         {
-            throw new NotImplementedException();
+            return _bookRepository.GetAll();
         }
 
         public Book Update(Book book)
         {
-            throw new NotImplementedException();
+            if (book.Id <= 0)
+                throw new IdentifierUndefinedException();
+            book.Validate();
+            return _bookRepository.Update(book);
         }
     }
 }

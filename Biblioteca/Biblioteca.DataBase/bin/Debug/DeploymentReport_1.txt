@@ -1,0 +1,31 @@
+﻿** Destaques
+     Tabelas que serão recriadas
+       Nenhum
+     Índices clusterizados que serão removidos
+       Nenhum
+     Índices clusterizados que serão criados
+       Nenhum
+     Possíveis problemas de dados
+       Nenhum
+
+** Ações do usuário
+     Alterar
+       [dbo].[TBBook] (Tabela)
+       [dbo].[TBLoan] (Tabela)
+
+** Ações de suporte
+     Remover
+       [dbo].[FK_TBLoan_ToTBBook] (Chave Estrangeira)
+     Criar
+       [dbo].[FK_TBLoan_ToTBBook] (Chave Estrangeira)
+
+A coluna Author na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna DatePost na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna IsAvaliable na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna Theme na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna Title na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna Volume na tabela [dbo].[TBBook] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna BookId na tabela [dbo].[TBLoan] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna DateDevolution na tabela [dbo].[TBLoan] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+A coluna NameClient na tabela [dbo].[TBLoan] deve ser alterada de NULL para NOT NULL. Se a tabela contiver dados, o script ALTER talvez não funcione. Para evitar o problema, você deve adicionar valores a essa coluna para todas as linhas, marcá-la para permitir valores NULL ou habilitar a geração de padrões inteligentes como uma opção de implantação.
+

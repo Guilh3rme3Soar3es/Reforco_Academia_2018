@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Biblioteca.Common.Tests.Base;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,12 @@ namespace Biblioteca.Infra.Data.Tests.Features.Books
     {
         [SetUp]
         public void Initialize()
+        {
+            BaseSqlTests.SeedDatabase();
+        }
+
+        [Test]
+        public void teste()
         {
 
         }

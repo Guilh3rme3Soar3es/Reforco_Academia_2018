@@ -54,6 +54,7 @@
     <Compile Include="Features\Books\BookThemeOverFlowException.cs" />
     <Compile Include="Features\Books\BookTitleNullOrEmptyException.cs" />
     <Compile Include="Features\Books\BookTitleOverFlowException.cs" />
+    <Compile Include="Features\Books\BookWithRelatedLoanException.cs" />
     <Compile Include="Features\Books\IBookRepository.cs" />
     <Compile Include="Features\Loans\ILoanRepository.cs" />
     <Compile Include="Features\Loans\Loan.cs" />

@@ -50,6 +50,10 @@
       <Project>{7F8ECE9E-E3FA-44E0-9EEC-7D31AE21D67C}</Project>
       <Name>Biblioteca.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Biblioteca.Infra\Biblioteca.Infra.csproj">
+      <Project>{9199FBAA-6917-43EF-B32A-E11F24AFB0BA}</Project>
+      <Name>Biblioteca.Infra</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

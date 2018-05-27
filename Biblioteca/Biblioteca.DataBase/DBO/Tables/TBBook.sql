@@ -1,12 +1,12 @@
 ﻿CREATE TABLE [dbo].[TBBook]
 (
 	[IdBook] INT NOT NULL IDENTITY, 
-    [Title] VARCHAR(100) NULL, 
-    [Theme] VARCHAR(100) NULL, 
-    [Author] VARCHAR(100) NULL, 
-    [Volume] INT NULL,
-    [DatePost] DATE NULL, 
-    [IsAvaliable] BIT NULL
+    [Title] VARCHAR(100) NOT NULL, 
+    [Theme] VARCHAR(100) NOT NULL, 
+    [Author] VARCHAR(100) NOT NULL, 
+    [Volume] INT NOT NULL,
+    [DatePost] DATE NOT NULL, 
+    [IsAvaliable] BIT NOT NULL
 	CONSTRAINT [PK_Books] PRIMARY KEY CLUSTERED
 
 (

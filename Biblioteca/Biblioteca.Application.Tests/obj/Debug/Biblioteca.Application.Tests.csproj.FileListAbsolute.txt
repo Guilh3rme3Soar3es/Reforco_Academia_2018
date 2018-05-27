@@ -35,3 +35,12 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Appl
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\obj\Debug\Biblioteca.Application.Tests.csproj.CopyComplete
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\obj\Debug\Biblioteca.Application.Tests.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\obj\Debug\Biblioteca.Application.Tests.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Application.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Common.Tests.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Application.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Common.Tests.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Application.Tests\bin\Debug\Biblioteca.Infra.dll.config

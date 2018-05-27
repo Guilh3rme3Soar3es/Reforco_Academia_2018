@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[TBLoan]
 (
 	[IdLoan] INT NOT NULL IDENTITY, 
-    [NameClient] VARCHAR(100) NULL, 
-    [DateDevolution] DATE NULL, 
-    [BookId] INT NULL,
+    [NameClient] VARCHAR(100) NOT NULL, 
+    [DateDevolution] DATE NOT NULL, 
+    [BookId] INT NOT NULL,
 	CONSTRAINT [FK_TBLoan_ToTBBook] FOREIGN KEY ([BookId]) REFERENCES [TBBook]([IdBook]),
 	CONSTRAINT [PK_Loan] PRIMARY KEY CLUSTERED
 (
