@@ -33,47 +33,52 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookTitleNull_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Title = null;
 
             Action comparation = () => _book.Validate();
 
-            comparation.Should().Throw<BookThemeNullOremptyException>();
+            comparation.Should().Throw<BookTitleNullOrEmptyException>();
         }
 
         [Test]
         public void Book_TestDomain_BookTitleEmpty_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Title = "";
 
             Action comparation = () => _book.Validate();
 
-            comparation.Should().Throw<BookThemeNullOremptyException>();
+            comparation.Should().Throw<BookTitleNullOrEmptyException>();
         }
 
         [Test]
         public void Book_TestDomain_BookWithShortTitle_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Title = "ABC";
 
             Action comparation = () => _book.Validate();
 
-            comparation.Should().NotThrow<BookShortTitleException>();
+            comparation.Should().Throw<BookShortTitleException>();
         }
 
         [Test]
         public void Book_TestDomain_BookTitleOverFlow_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Title = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa";
 
             Action comparation = () => _book.Validate();
 
-            comparation.Should().NotThrow<BookTitleOverFlowException>();
+            comparation.Should().Throw<BookTitleOverFlowException>();
         }
 
 
         [Test]
         public void Book_TestDomain_BookThemeNull_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Theme = null;
 
             Action comparation = () => _book.Validate();
@@ -84,6 +89,7 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookThemeEmpty_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Theme = "";
 
             Action comparation = () => _book.Validate();
@@ -94,6 +100,7 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookWithShortTheme_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Theme = "ABC";
 
             Action comparation = () => _book.Validate();
@@ -104,6 +111,7 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookThemeOverFlow_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Theme = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa";
 
             Action comparation = () => _book.Validate();
@@ -114,6 +122,7 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookInvalidVolume_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.Volume = 0;
 
             Action comparation = () => _book.Validate();
@@ -124,6 +133,7 @@ namespace Biblioteca.Domain.Tests.Features.Books
         [Test]
         public void Book_TestDomain_BookInvalidPostDate_ShouldBeFail()
         {
+            _book = ObjectMother.GetBookOK();
             _book.PostDate = DateTime.Now.AddDays(+1);
 
             Action comparation = () => _book.Validate();

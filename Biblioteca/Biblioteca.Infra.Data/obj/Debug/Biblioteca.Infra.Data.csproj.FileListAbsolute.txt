@@ -1,0 +1,9 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Infra.Data.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Infra.Data.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\bin\Debug\Biblioteca.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.csproj.CopyComplete
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra.Data\obj\Debug\Biblioteca.Infra.Data.csprojResolveAssemblyReference.cache

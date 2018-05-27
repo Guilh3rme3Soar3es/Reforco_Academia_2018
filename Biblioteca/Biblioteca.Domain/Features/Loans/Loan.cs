@@ -18,6 +18,8 @@ namespace Biblioteca.Domain.Features.Loans
         {
             if (String.IsNullOrEmpty(ClientName))
                 throw new LoanClientNameNullOrEmptyException();
+            if (ClientName.Length >= 100)
+                throw new LoanClientNameOverFlowException();
             if (DateDevolution <= DateTime.Now)
                 throw new LoanInvalidDateDevolutionException();
             if (Book == null)

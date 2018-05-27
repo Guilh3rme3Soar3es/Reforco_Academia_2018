@@ -14,7 +14,7 @@ namespace Biblioteca.Domain.Features.Books
         public string Author { get; set; }
         public int Volume { get; set; }
         public DateTime PostDate { get; set; }
-        public bool IsAvaliable { get; set; }
+        public virtual bool IsAvaliable { get; set; }
 
         public override void Validate()
         {
@@ -26,7 +26,7 @@ namespace Biblioteca.Domain.Features.Books
             {
                 throw new BookShortTitleException();
             }
-            else if (Title.Length < 100)
+            else if (Title.Length > 100)
             {
                 throw new BookTitleOverFlowException();
             }

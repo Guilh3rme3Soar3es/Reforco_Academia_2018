@@ -78,7 +78,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Application\Biblioteca.Application.csproj">
+      <Project>{3DF7787D-289F-4599-99E7-AB8E6DDF22BF}</Project>
+      <Name>Biblioteca.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biblioteca.Common.Tests\Biblioteca.Common.Tests.csproj">
+      <Project>{7EACCCE7-D70A-4245-B1BB-1928CAD113D0}</Project>
+      <Name>Biblioteca.Common.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biblioteca.Domain\Biblioteca.Domain.csproj">
+      <Project>{7F8ECE9E-E3FA-44E0-9EEC-7D31AE21D67C}</Project>
+      <Name>Biblioteca.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

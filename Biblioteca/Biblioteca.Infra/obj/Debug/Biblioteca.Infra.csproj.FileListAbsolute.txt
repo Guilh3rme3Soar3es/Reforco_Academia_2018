@@ -1,0 +1,7 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\bin\Debug\Biblioteca.Infra.dll.config
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\bin\Debug\Biblioteca.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\bin\Debug\Biblioteca.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\obj\Debug\Biblioteca.Infra.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\obj\Debug\Biblioteca.Infra.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\obj\Debug\Biblioteca.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Infra\obj\Debug\Biblioteca.Infra.pdb

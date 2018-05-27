@@ -1,0 +1,6 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\bin\Debug\Biblioteca.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\bin\Debug\Biblioteca.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\obj\Debug\Biblioteca.Domain.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\obj\Debug\Biblioteca.Domain.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\obj\Debug\Biblioteca.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Domain\obj\Debug\Biblioteca.Domain.pdb

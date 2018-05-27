@@ -1,0 +1,9 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\bin\Debug\Biblioteca.Common.Tests.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\bin\Debug\Biblioteca.Common.Tests.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\bin\Debug\Biblioteca.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\bin\Debug\Biblioteca.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\obj\Debug\Biblioteca.Common.Tests.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\obj\Debug\Biblioteca.Common.Tests.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\obj\Debug\Biblioteca.Common.Tests.csproj.CopyComplete
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\obj\Debug\Biblioteca.Common.Tests.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\Biblioteca\Biblioteca.Common.Tests\obj\Debug\Biblioteca.Common.Tests.pdb

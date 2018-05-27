@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Biblioteca.Application.Features.Loans;
 using Biblioteca.Domain.Features.Books;
 
 namespace Biblioteca.Application.Features.Books
 {
     public class BookService : IBookService
     {
+        private IBookRepository _bookRepository;
+        private ILoanService _loanService;
+
+        public BookService(IBookRepository bookRepository, ILoanService loanService)
+        {
+            _bookRepository = bookRepository;
+            _loanService = loanService;
+        }
+
         public Book Add(Book book)
         {
-            throw new NotImplementedException();
         }
 
         public void Delete(Book book)

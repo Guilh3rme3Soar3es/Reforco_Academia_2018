@@ -58,6 +58,7 @@
     <Compile Include="Features\Loans\ILoanRepository.cs" />
     <Compile Include="Features\Loans\Loan.cs" />
     <Compile Include="Features\Loans\LoanClientNameNullOrEmptyException.cs" />
+    <Compile Include="Features\Loans\LoanClientNameOverFlowException.cs" />
     <Compile Include="Features\Loans\LoanInvalidDateDevolutionException.cs" />
     <Compile Include="Features\Loans\LoanNoBookException.cs" />
     <Compile Include="Features\Loans\LoanWithBookNotAvaliableException.cs" />
