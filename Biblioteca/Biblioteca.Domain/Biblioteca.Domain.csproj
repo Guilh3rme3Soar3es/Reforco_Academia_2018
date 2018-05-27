@@ -46,9 +46,21 @@
     <Compile Include="Exceptions\UnsupportedOperationException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Features\Books\Book.cs" />
+    <Compile Include="Features\Books\BookInvalidPostDateException.cs" />
+    <Compile Include="Features\Books\BookInvalidVolumeException.cs" />
+    <Compile Include="Features\Books\BookShortThemeException.cs" />
+    <Compile Include="Features\Books\BookShortTitleException.cs" />
+    <Compile Include="Features\Books\BookThemeNullOremptyException.cs" />
+    <Compile Include="Features\Books\BookThemeOverFlowException.cs" />
+    <Compile Include="Features\Books\BookTitleNullOrEmptyException.cs" />
+    <Compile Include="Features\Books\BookTitleOverFlowException.cs" />
     <Compile Include="Features\Books\IBookRepository.cs" />
     <Compile Include="Features\Loans\ILoanRepository.cs" />
     <Compile Include="Features\Loans\Loan.cs" />
+    <Compile Include="Features\Loans\LoanClientNameNullOrEmptyException.cs" />
+    <Compile Include="Features\Loans\LoanInvalidDateDevolutionException.cs" />
+    <Compile Include="Features\Loans\LoanNoBookException.cs" />
+    <Compile Include="Features\Loans\LoanWithBookNotAvaliableException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

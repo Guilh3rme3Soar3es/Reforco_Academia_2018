@@ -1,0 +1,17 @@
+﻿** Destaques
+     Tabelas que serão recriadas
+       Nenhum
+     Índices clusterizados que serão removidos
+       Nenhum
+     Índices clusterizados que serão criados
+       Nenhum
+     Possíveis problemas de dados
+       Nenhum
+
+** Ações do usuário
+     Criar
+       [dbo].[TBBook] (Tabela)
+       [dbo].[TBLoan] (Tabela)
+       [dbo].[FK_TBLoan_ToTBBook] (Chave Estrangeira)
+
+** Ações de suporte

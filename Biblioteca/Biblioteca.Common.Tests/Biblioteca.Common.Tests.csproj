@@ -45,5 +45,11 @@
     <Compile Include="Features\Loans\ObjectMother.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca.Domain\Biblioteca.Domain.csproj">
+      <Project>{7F8ECE9E-E3FA-44E0-9EEC-7D31AE21D67C}</Project>
+      <Name>Biblioteca.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

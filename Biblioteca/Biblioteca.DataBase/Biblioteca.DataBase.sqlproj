@@ -60,4 +60,11 @@
     <Folder Include="DBO" />
     <Folder Include="DBO\Tables" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="DBO\Tables\TBBook.sql" />
+    <Build Include="DBO\Tables\TBLoan.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Biblioteca.DataBase.refactorlog" />
+  </ItemGroup>
 </Project>
