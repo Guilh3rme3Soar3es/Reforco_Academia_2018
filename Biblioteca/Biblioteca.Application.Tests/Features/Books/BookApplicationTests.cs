@@ -160,7 +160,7 @@ namespace Biblioteca.Application.Tests.Features.Books
             Action comparation = () => _bookService.Delete(_book);
 
             comparation.Should().Throw<BookWithRelatedLoanException>();
-            _mockLoanService.Verify(lc => lc.GetByBook(_book.Id));
+            _mockLoanService.Verify(ls => ls.GetByBook(_book.Id));
             _mockBookRepository.VerifyNoOtherCalls();
         }
     }

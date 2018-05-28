@@ -25,9 +25,8 @@ namespace Biblioteca.Infra.Data.Features.Loans
                                                            "BookId = @IdBook" +
                                                            " WHERE IdLoan = @IdLoan";
 
-        private const string _getAll = "SELECT * FROM TBLoan";
 
-        private const string _getAllTeste = "SELECT l.*, b.Title AS book_Title, b.Theme AS book_Theme, b.Author AS book_Author, b.Volume AS book_Volume, b.DatePost AS book_DatePost, b.IsAvaliable AS book_IsAvaliable FROM TBLoan AS l INNER JOIN TBBook AS b ON (l.BookId = b.IdBook)";
+        private const string _getAll = "SELECT l.*, b.Title AS book_Title, b.Theme AS book_Theme, b.Author AS book_Author, b.Volume AS book_Volume, b.DatePost AS book_DatePost, b.IsAvaliable AS book_IsAvaliable FROM TBLoan AS l INNER JOIN TBBook AS b ON (l.BookId = b.IdBook)";
 
         private const string _delete = "DELETE FROM TBLoan WHERE IdLoan = @IdLoan";
 
@@ -51,7 +50,7 @@ namespace Biblioteca.Infra.Data.Features.Loans
 
         public IEnumerable<Loan> GetAll()
         {
-            return Db.GetAll(_getAllTeste, Make);
+            return Db.GetAll(_getAll, Make);
         }
 
         public IEnumerable<Loan> GetByBook(long idBook)

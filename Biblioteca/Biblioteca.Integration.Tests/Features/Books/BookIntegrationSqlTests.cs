@@ -446,20 +446,5 @@ namespace Biblioteca.Integration.Tests.Features.Books
             var BookFound = _bookService.GetAll();
             BookFound.Count().Should().Be(1);
         }
-
-        [Test]
-        public void Book_TestSystemIntegrationSql_GetByBook_InvalidId_ShouldBeFail()
-        {
-            Book Book = ObjectMother.GetBookOK();
-            Book.Id = -1;
-
-            Action comparation = () => _bookService.Delete(Book);
-
-            comparation.Should().Throw<IdentifierUndefinedException>();
-            var BookFound = _bookService.GetAll();
-            BookFound.Count().Should().Be(1);
-        }
-
-        
     }
 }

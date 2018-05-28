@@ -138,7 +138,7 @@ namespace Biblioteca.Application.Tests.Features.Loans
         public void Loan_TesteService_DeleteBook_InvalidId_SouldBeFail()
         {
             _loan.Id = 0;
-            _mockLoanRepository.Setup(br => br.Delete(_loan));
+            _mockLoanRepository.Setup(lr => lr.Delete(_loan));
 
             Action comparation = () => _loanService.Delete(_loan);
 
@@ -150,7 +150,7 @@ namespace Biblioteca.Application.Tests.Features.Loans
         public void Loan_TesteService_GetByBook_InvalidId_SouldBeFail()
         {
             _loan.Book.Id = 0;
-            _mockLoanRepository.Setup(br => br.GetByBook(_loan.Book.Id));
+            _mockLoanRepository.Setup(lr => lr.GetByBook(_loan.Book.Id));
 
             Action comparation = () => _loanService.GetByBook(_loan.Book.Id);
 
@@ -161,7 +161,7 @@ namespace Biblioteca.Application.Tests.Features.Loans
         [Test]
         public void Loan_TesteService_GetByBook_SouldBeOk()
         {
-            _mockLoanRepository.Setup(br => br.GetByBook(_loan.Book.Id)).Returns(new List<Loan> { _loan });
+            _mockLoanRepository.Setup(lr => lr.GetByBook(_loan.Book.Id)).Returns(new List<Loan> { _loan });
 
             var  listLoans = _loanService.GetByBook(_loan.Book.Id);
 

@@ -13,6 +13,7 @@ namespace Biblioteca.Domain.Features.Loans
         public string ClientName { get; set; }
         public DateTime DateDevolution { get; set; }
         public Book Book { get; set; }
+        public double Fine { get; set; }
 
         public override void Validate()
         {
@@ -26,6 +27,15 @@ namespace Biblioteca.Domain.Features.Loans
                 throw new LoanNoBookException();
             if (!Book.IsAvaliable)
                 throw new LoanWithBookNotAvaliableException();
+        }
+
+        public void CalculateFine()
+        {
+            if(DateDevolution < DateTime.Now)
+            {
+                TimeSpan intervalo = DateTime.Now - DateDevolution;
+                Fine = intervalo.Days * 2.5;
+            }
         }
     }
 }

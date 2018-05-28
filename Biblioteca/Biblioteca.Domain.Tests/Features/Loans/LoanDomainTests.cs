@@ -105,6 +105,32 @@ namespace Biblioteca.Domain.Tests.Features.Loans
             comparation.Should().Throw<LoanWithBookNotAvaliableException>();
         }
 
+        [Test]
+        public void Loan_DomainTests_CalculateFine_ShouldBeOk()
+        {
+            var expectedFine = 7.5;
+            _fakeBook.Setup(b => b.IsAvaliable).Returns(true);
+            _loan = ObjectMother.GetLoanOk(_fakeBook.Object);
+            _loan.DateDevolution = DateTime.Now.AddDays(-3);
+
+            _loan.CalculateFine();
+
+            _loan.Fine.Should().Be(expectedFine);
+        }
+
+        [Test]
+        public void Loan_DomainTests_CalculateFine_NoFine_ShouldBeOk()
+        {
+            var expectedFine = 0;
+            _fakeBook.Setup(b => b.IsAvaliable).Returns(true);
+            _loan = ObjectMother.GetLoanOk(_fakeBook.Object);
+            _loan.DateDevolution = DateTime.Now.AddDays(+1);
+
+            _loan.CalculateFine();
+
+            _loan.Fine.Should().Be(expectedFine);
+        }
+
 
     }
 }
