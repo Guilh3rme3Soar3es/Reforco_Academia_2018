@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[TBBook]
 (
-	[IdBook] INT NOT NULL IDENTITY, 
+	[IdBook] INT NOT NULL IDENTITY(1,1), 
     [Title] VARCHAR(100) NOT NULL, 
     [Theme] VARCHAR(100) NOT NULL, 
     [Author] VARCHAR(100) NOT NULL, 

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[TBLoan]
 (
-	[IdLoan] INT NOT NULL IDENTITY, 
+	[IdLoan] INT NOT NULL IDENTITY(1,1), 
     [NameClient] VARCHAR(100) NOT NULL, 
     [DateDevolution] DATE NOT NULL, 
     [BookId] INT NOT NULL,
