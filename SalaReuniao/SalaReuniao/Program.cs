@@ -10,6 +10,11 @@ namespace SalaReuniao
     {
         static void Main(string[] args)
         {
+            DateTime x = DateTime.Now;
+            DateTime y = DateTime.Now.AddDays(-1);
+            Console.WriteLine(x.DayOfWeek);
+            Console.WriteLine(y.DayOfYear);
+            Console.ReadKey();
         }
     }
 }

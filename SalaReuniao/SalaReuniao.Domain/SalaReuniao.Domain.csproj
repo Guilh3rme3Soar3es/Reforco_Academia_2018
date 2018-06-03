@@ -49,6 +49,12 @@
     <Compile Include="Features\Eventos\Evento.cs" />
     <Compile Include="Features\Eventos\IEventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\Funcionario.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioCargoNuloOuVazioException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioEstouroDeLarguraDeCargoException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioEstouroDeLarguraDoNomeException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioNomeNuloOuVazioException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioRamalInvalidoException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioRamalNulloOuVazioException.cs" />
     <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\ISalaRepositorio.cs" />
     <Compile Include="Features\Salas\Sala.cs" />

@@ -71,6 +71,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Funcionarios\FuncionarioDomainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -78,8 +79,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\Eventos\" />
-    <Folder Include="Features\Funcionarios\" />
     <Folder Include="Features\Salas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SalaReuniao.Common\SalaReuniao.Common.csproj">
+      <Project>{272EA7EC-F835-4244-BC25-F64F8D2F1B25}</Project>
+      <Name>SalaReuniao.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalaReuniao.Domain\SalaReuniao.Domain.csproj">
+      <Project>{5FB9825C-A125-46F4-A8AF-4D1A22BE8A91}</Project>
+      <Name>SalaReuniao.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

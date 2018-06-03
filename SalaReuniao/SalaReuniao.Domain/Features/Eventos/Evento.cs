@@ -1,6 +1,6 @@
 ﻿using SalaReuniao.Domain.Common;
 using SalaReuniao.Domain.Features.Funcionarios;
-using SalaReuniao.Domain.Features.Salas.Salas;
+using SalaReuniao.Domain.Features.Salas;
 using System;
 using System.Collections.Generic;
 using System.Linq;

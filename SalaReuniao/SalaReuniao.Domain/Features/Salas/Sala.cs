@@ -20,9 +20,12 @@ namespace SalaReuniao.Domain.Features.Salas
             {
                 for (int j = 0; j < Eventos.Count; j++)
                 {
-                    if (Eventos[i].DataTermino > Eventos[j].DataInicio)
+                    if (Eventos[i].DataInicio.DayOfYear == Eventos[j].DataInicio.DayOfYear)
                     {
-                        throw new Exception();
+                        if (Eventos[i].DataTermino > Eventos[j].DataInicio)
+                        {
+                            throw new Exception();
+                        }
                     }
                 }
             }
