@@ -1,0 +1,17 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\pt\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.Data.Tests.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.Data.Tests.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.csproj.CopyComplete
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.pdb

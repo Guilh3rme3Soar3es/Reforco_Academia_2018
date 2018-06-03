@@ -1,0 +1,2 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra\obj\Debug\SalaReuniao.Infra.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra\obj\Debug\SalaReuniao.Infra.csproj.CoreCompileInputs.cache

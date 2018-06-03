@@ -10,11 +10,6 @@ namespace SalaReuniao
     {
         static void Main(string[] args)
         {
-            DateTime x = DateTime.Now;
-
-            Console.WriteLine(x.Hour);
-            Console.WriteLine(x.Minute);
-            Console.ReadKey();
         }
     }
 }

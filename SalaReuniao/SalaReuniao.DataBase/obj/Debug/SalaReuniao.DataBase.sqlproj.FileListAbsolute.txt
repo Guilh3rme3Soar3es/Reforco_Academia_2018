@@ -1,0 +1,9 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\bin\Debug\SalaReuniao.DataBase.dacpac
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\bin\Debug\SalaReuniao.DataBase.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\bin\Debug\SalaReuniao.DataBase.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\Model.xml
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\refactor.xml
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\postdeploy.sql
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\predeploy.sql
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\SalaReuniao.DataBase.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.DataBase\obj\Debug\SalaReuniao.DataBase.pdb

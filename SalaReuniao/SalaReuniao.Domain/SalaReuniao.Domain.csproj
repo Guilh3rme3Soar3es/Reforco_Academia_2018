@@ -44,9 +44,14 @@
   <ItemGroup>
     <Compile Include="Common\Entidade.cs" />
     <Compile Include="Common\Nome.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Features\Eventos\Evento.cs" />
+    <Compile Include="Features\Eventos\IEventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\Funcionario.cs" />
-    <Compile Include="Features\Salas\Salas\Sala.cs" />
+    <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
+    <Compile Include="Features\Salas\ISalaRepositorio.cs" />
+    <Compile Include="Features\Salas\Sala.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
