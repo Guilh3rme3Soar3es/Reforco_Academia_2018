@@ -1,2 +1,6 @@
-H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\obj\Debug\SalaReuniao.Domain.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\bin\Debug\SalaReuniao.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\bin\Debug\SalaReuniao.Domain.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\obj\Debug\SalaReuniao.Domain.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\obj\Debug\SalaReuniao.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\obj\Debug\SalaReuniao.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain\obj\Debug\SalaReuniao.Domain.csprojResolveAssemblyReference.cache

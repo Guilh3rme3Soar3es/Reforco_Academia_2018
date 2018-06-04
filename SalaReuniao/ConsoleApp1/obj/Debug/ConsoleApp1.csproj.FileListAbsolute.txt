@@ -1,0 +1,6 @@
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

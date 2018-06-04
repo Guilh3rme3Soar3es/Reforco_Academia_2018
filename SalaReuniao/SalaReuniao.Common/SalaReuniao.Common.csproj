@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SalaReuniao.Domain\SalaReuniao.Domain.csproj">
-      <Project>{5FB9825C-A125-46F4-A8AF-4D1A22BE8A91}</Project>
+      <Project>{D534E8E1-E67E-4C4D-BF2E-8EC93DC52EE6}</Project>
       <Name>SalaReuniao.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\SalaReuniao.Infra\SalaReuniao.Infra.csproj">

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FB9825C-A125-46F4-A8AF-4D1A22BE8A91}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{D534E8E1-E67E-4C4D-BF2E-8EC93DC52EE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SalaReuniao.Domain</RootNamespace>
     <AssemblyName>SalaReuniao.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,11 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Entidade.cs" />
     <Compile Include="Common\Nome.cs" />
+    <Compile Include="Common\Entidade.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\IdentifierUndefinedException.cs" />
     <Compile Include="Features\Eventos\Evento.cs" />
+    <Compile Include="Features\Eventos\EventoDataInicioDiaNãoPermitidoException.cs" />
+    <Compile Include="Features\Eventos\EventoDataInicioForaHorarioDoLimiteException.cs" />
+    <Compile Include="Features\Eventos\EventoDataInicioInvalidaException.cs" />
+    <Compile Include="Features\Eventos\EventoDataInicioMaiorQueDataTerminoException.cs" />
+    <Compile Include="Features\Eventos\EventoDataInicioNulaOuVaziaException.cs" />
+    <Compile Include="Features\Eventos\EventoDataTerminoDiaNãoPermitidoException.cs" />
+    <Compile Include="Features\Eventos\EventoDataTerminoHorarioForaDoLimite.cs" />
+    <Compile Include="Features\Eventos\EventoDataTerminoInvalidaException.cs" />
     <Compile Include="Features\Eventos\IEventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\Funcionario.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioCargoNuloOuVazioException.cs" />
@@ -54,14 +60,12 @@
     <Compile Include="Features\Funcionarios\FuncionarioEstouroDeLarguraDoNomeException.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioNomeNuloOuVazioException.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioRamalInvalidoException.cs" />
-    <Compile Include="Features\Funcionarios\FuncionarioRamalNulloOuVazioException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioRamalNuloOuVazioException.cs" />
     <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\ISalaRepositorio.cs" />
     <Compile Include="Features\Salas\Sala.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

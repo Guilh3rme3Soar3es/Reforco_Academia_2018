@@ -1,4 +1,4 @@
-﻿]using SalaReuniao.Domain.Exceptions;
+﻿using SalaReuniao.Domain.Exceptions;
 using SalaReuniao.Domain.Features.Salas;
 using System;
 using System.Collections.Generic;
