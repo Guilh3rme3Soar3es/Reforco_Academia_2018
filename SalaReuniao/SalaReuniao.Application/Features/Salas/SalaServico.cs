@@ -27,8 +27,6 @@ namespace SalaReuniao.Application.Features.Salas
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
-            //if (_loanService.GetByBook(book.Id).Count() > 0)
-            //    throw new BookWithRelatedLoanException();
             _salaRepositorio.Delete(sala);
         }
 

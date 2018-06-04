@@ -10,8 +10,8 @@ namespace SalaReuniao.Domain.Features.Eventos
 {
     public class Evento : Entidade
     {
-        public DateTime DataInicio { get; set; }
-        public DateTime DataTermino { get; set; }
+        public virtual DateTime DataInicio { get; set; }
+        public virtual DateTime DataTermino { get; set; }
         public IList<Funcionario> Funcionarios { get; set; }
 
         public override void Validar()

@@ -64,6 +64,9 @@
     <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\ISalaRepositorio.cs" />
     <Compile Include="Features\Salas\Sala.cs" />
+    <Compile Include="Features\Salas\SalaEventosNoMesmoHorarioException.cs" />
+    <Compile Include="Features\Salas\SalaNumeroLugaresInvalido.cs" />
+    <Compile Include="Features\Salas\SalaNumeroLugaresNaoInformado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

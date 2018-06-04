@@ -16,15 +16,19 @@ namespace SalaReuniao.Domain.Features.Salas
 
         public override void Validar()
         {
+            if (NumeroLugares == 0)
+                throw new SalaNumeroLugaresNaoInformado();
+            if (NumeroLugares < 0)
+                throw new SalaNumeroLugaresInvalido();
             for (int i = 0; i < Eventos.Count; i++)
             {
                 for (int j = 0; j < Eventos.Count; j++)
                 {
-                    if (Eventos[i].DataInicio.DayOfYear == Eventos[j].DataInicio.DayOfYear)
+                    if (Eventos[i].DataInicio.DayOfYear == Eventos[j].DataInicio.DayOfYear && i != j)
                     {
-                        if (Eventos[i].DataTermino > Eventos[j].DataInicio)
+                        if (Eventos[i].DataTermino > Eventos[j].DataInicio && Eventos[j].DataInicio >= Eventos[i].DataInicio)
                         {
-                            throw new Exception();
+                            throw new SalaEventosNoMesmoHorarioException();
                         }
                     }
                 }
