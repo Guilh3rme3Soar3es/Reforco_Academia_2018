@@ -9,10 +9,10 @@ namespace SalaReuniao.Application.Features.Funcionarios
 {
     public interface IFuncionarioServico
     {
-        Funcionario Add(Funcionario funcionario);
-        Funcionario Update(Funcionario funcionario);
-        Funcionario Get(long id);
-        IEnumerable<Funcionario> GetAll();
-        void Delete(Funcionario funcionario);
+        Funcionario Adicionar(Funcionario funcionario);
+        Funcionario Atualizar(Funcionario funcionario);
+        Funcionario Carregar(long id);
+        IEnumerable<Funcionario> CarregarTodos();
+        void Deletar(Funcionario funcionario);
     }
 }

@@ -31,14 +31,14 @@ namespace SalaReuniao.Domain.Tests.Features.Salas
         [Test]
         public void Teste_Sala_ValidarDeveSerOk()
         {
-            Sala sala = ObjectMother.GetNovaSalaOk();
+            Sala sala = ObjectMother.RetorneNovaSalaOk();
             sala.Validar();
         }
 
         [Test]
         public void Teste_Sala_ValidarNumeroLugaresNaoInformado_DeveSerThrowException()
         {
-            Sala sala = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
+            Sala sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresNaoInformado();
             Action action = () => sala.Validar();
             action.Should().Throw<SalaNumeroLugaresNaoInformado>();
         }
@@ -46,7 +46,7 @@ namespace SalaReuniao.Domain.Tests.Features.Salas
         [Test]
         public void Teste_Sala_ValidarNumeroLugaresInvalido_DeveSerThrowException()
         {
-            Sala sala = ObjectMother.GetSalaInvalidaComNumeroLugaresInvalido();
+            Sala sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresInvalido();
             Action action = () => sala.Validar();
             action.Should().Throw<SalaNumeroLugaresInvalido>();
         }

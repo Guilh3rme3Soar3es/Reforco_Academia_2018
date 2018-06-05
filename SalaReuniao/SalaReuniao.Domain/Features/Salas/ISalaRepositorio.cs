@@ -8,10 +8,10 @@ namespace SalaReuniao.Domain.Features.Salas
 {
     public interface ISalaRepositorio
     {
-        Sala Save(Sala sala);
-        Sala Update(Sala sala);
-        Sala Get(long id);
-        IEnumerable<Sala> GetAll();
-        void Delete(Sala sala);
+        Sala Salvar(Sala sala);
+        Sala Atualizar(Sala sala);
+        Sala Carregar(long id);
+        IEnumerable<Sala> CarregarTodos();
+        void Deletar(Sala sala);
     }
 }

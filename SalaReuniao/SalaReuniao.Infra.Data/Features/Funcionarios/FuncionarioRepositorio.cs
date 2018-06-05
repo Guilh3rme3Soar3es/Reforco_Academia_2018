@@ -28,14 +28,14 @@ namespace SalaReuniao.Infra.Data.Features.Funcionarios
 
         #endregion#Scripts
 
-        public void Delete(Funcionario funcionario)
+        public void Deletar(Funcionario funcionario)
         {
             if (funcionario.Id <= 0)
                 throw new IdentifierUndefinedException();
             Db.Delete(_deletar, new object[] { "@IdFuncionario", funcionario.Id });
         }
 
-        public Funcionario Get(long id)
+        public Funcionario Carregar(long id)
         {
             if (id <= 0)
                 throw new IdentifierUndefinedException();
@@ -43,12 +43,12 @@ namespace SalaReuniao.Infra.Data.Features.Funcionarios
 
         }
 
-        public IEnumerable<Funcionario> GetAll()
+        public IEnumerable<Funcionario> CarregarTodos()
         {
             return Db.GetAll(_carregarTodos, Make);
         }
 
-        public Funcionario Save(Funcionario funcionario)
+        public Funcionario Salvar(Funcionario funcionario)
         {
             funcionario.Validar();
             funcionario.Id = Db.Insert(_inserir, Take(funcionario));
@@ -56,7 +56,7 @@ namespace SalaReuniao.Infra.Data.Features.Funcionarios
             return funcionario;
         }
 
-        public Funcionario Update(Funcionario funcionario)
+        public Funcionario Atualizar(Funcionario funcionario)
         {
             if (funcionario.Id <= 0)
                 throw new IdentifierUndefinedException();
@@ -80,7 +80,7 @@ namespace SalaReuniao.Infra.Data.Features.Funcionarios
         {
             return new object[]
             {
-                "@IdSalIdFuncionarioa", funcionario.Id,
+                "@IdFuncionario", funcionario.Id,
                 "@Nome", funcionario.Nome,
                 "@Cargo", funcionario.Cargo,
                 "@Ramal", funcionario.Ramal

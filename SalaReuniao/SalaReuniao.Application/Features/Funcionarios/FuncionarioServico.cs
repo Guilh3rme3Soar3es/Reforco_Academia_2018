@@ -17,37 +17,37 @@ namespace SalaReuniao.Application.Features.Funcionarios
             _funcionarioRepositorio = funcionarioRepositorio;
         }
 
-        public Funcionario Add(Funcionario sala)
+        public Funcionario Adicionar(Funcionario sala)
         {
             sala.Validar();
-            return _funcionarioRepositorio.Save(sala);
+            return _funcionarioRepositorio.Salvar(sala);
         }
 
-        public void Delete(Funcionario sala)
+        public void Deletar(Funcionario sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
-            _funcionarioRepositorio.Delete(sala);
+            _funcionarioRepositorio.Deletar(sala);
         }
 
-        public Funcionario Get(long id)
+        public Funcionario Carregar(long id)
         {
             if (id <= 0)
                 throw new IdentifierUndefinedException();
-            return _funcionarioRepositorio.Get(id);
+            return _funcionarioRepositorio.Carregar(id);
         }
 
-        public IEnumerable<Funcionario> GetAll()
+        public IEnumerable<Funcionario> CarregarTodos()
         {
-            return _funcionarioRepositorio.GetAll();
+            return _funcionarioRepositorio.CarregarTodos();
         }
 
-        public Funcionario Update(Funcionario sala)
+        public Funcionario Atualizar(Funcionario sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
             sala.Validar();
-            return _funcionarioRepositorio.Update(sala);
+            return _funcionarioRepositorio.Atualizar(sala);
         }
     }
 }

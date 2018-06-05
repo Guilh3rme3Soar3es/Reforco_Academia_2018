@@ -16,14 +16,14 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_Validar_DeveSerOk()
         {
-            Funcionario funcionario = ObjectMother.GetNovoFuncionarioOk();
+            Funcionario funcionario = ObjectMother.RetorneNovoFuncionarioOk();
             funcionario.Validar();
         }
 
         [Test]
         public void Teste_Funcionario_ValidarNomeNaoInformado_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComNomeNaoInformado();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComNomeNaoInformado();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioNomeNuloOuVazioException>();
         }
@@ -31,7 +31,7 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_ValidarNomeMuitoLongo_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComNomeLongo();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComNomeLongo();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioEstouroDeLarguraDoNomeException>();
         }
@@ -39,7 +39,7 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_ValidarCargoNaoInformado_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComCargoNaoInformado();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComCargoNaoInformado();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioCargoNuloOuVazioException>();
         }
@@ -47,7 +47,7 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_ValidarCargoMuitoLongo_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComCargoLongo();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComCargoLongo();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioEstouroDeLarguraDeCargoException>();
         }
@@ -55,7 +55,7 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_ValidarRamalNaoInformado_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComRamalNaoInformado();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComRamalNaoInformado();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioRamalNuloOuVazioException>();
         }
@@ -63,7 +63,7 @@ namespace SalaReuniao.Domain.Tests.Features.Funcionarios
         [Test]
         public void Teste_Funcionario_ValidarRamalInvalido_DeverSerThrowException()
         {
-            Funcionario funcionario = ObjectMother.GetFuncionarioComRamalInvalido();
+            Funcionario funcionario = ObjectMother.RetorneFuncionarioComRamalInvalido();
             Action action = () => funcionario.Validar();
             action.Should().Throw<FuncionarioRamalInvalidoException>();
         }

@@ -30,49 +30,49 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Salas
         public void Teste_SalaRepositorio_SalvarSala_DeveSerOk()
         {
             long idEsperado = 3;
-            _sala = ObjectMother.GetNovaSalaOk();
-            Sala salaSalva = _repositorio.Save(_sala);
+            _sala = ObjectMother.RetorneNovaSalaOk();
+            Sala salaSalva = _repositorio.Salvar(_sala);
             salaSalva.Id.Should().Be(idEsperado);
         }
 
         [Test]
         public void Teste_SalaRepositorio_SalvarSalaInvalida_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
-            Action action = () => _repositorio.Save(_sala);
+            _sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresNaoInformado();
+            Action action = () => _repositorio.Salvar(_sala);
             action.Should().Throw<SalaNumeroLugaresNaoInformado>();
         }
 
         [Test]
         public void Teste_SalaRepositorio_AtualizarSala_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            Sala salaAtualizada = _repositorio.Update(_sala);
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            Sala salaAtualizada = _repositorio.Atualizar(_sala);
             salaAtualizada.Should().Be(_sala);
         }
 
         [Test]
         public void Teste_SalaRepositorio_AtualizarSalaInvalida_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
+            _sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresNaoInformado();
             _sala.Id = 1;
-            Action action = () => _repositorio.Update(_sala);
+            Action action = () => _repositorio.Atualizar(_sala);
             action.Should().Throw<SalaNumeroLugaresNaoInformado>();
         }
 
         [Test]
         public void Teste_SalaRepositorio_AtualizarSalaComIdInvalido_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetNovaSalaOk();
-            Action action = () => _repositorio.Update(_sala);
+            _sala = ObjectMother.RetorneNovaSalaOk();
+            Action action = () => _repositorio.Atualizar(_sala);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
         [Test]
         public void Teste_SalaRepositorio_CarregarSala_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            Sala salaEncontrada = _repositorio.Get(_sala.Id);
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            Sala salaEncontrada = _repositorio.Carregar(_sala.Id);
             salaEncontrada.Should().NotBeNull();
             salaEncontrada.Id.Should().Be(_sala.Id);
         }
@@ -81,16 +81,16 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Salas
         public void Teste_SalaRepositorio_CarregarSalaComIdInvalido_DeveSerThrowException()
         {
             long idInvalido = 0;
-            Action action = () => _repositorio.Get(idInvalido);
+            Action action = () => _repositorio.Carregar(idInvalido);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
         [Test]
         public void Teste_SalaRepositorio_CarregarSalaIdNaoEncontrado_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
             _sala.Id = 100;
-            Sala salaEncontrada = _repositorio.Get(_sala.Id);
+            Sala salaEncontrada = _repositorio.Carregar(_sala.Id);
             salaEncontrada.Should().BeNull();
         }
 
@@ -98,7 +98,7 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Salas
         public void Teste_SalaRepositorio_CarregarTodos_DeveSerOk()
         {
             int quantidadeEsperada = 2;
-            var listaSalas = _repositorio.GetAll();
+            var listaSalas = _repositorio.CarregarTodos();
             listaSalas.Should().NotBeNullOrEmpty();
             listaSalas.Count().Should().Be(quantidadeEsperada);
         }
@@ -106,9 +106,9 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Salas
         [Test]
         public void Teste_SalaRepositorio_DeletarSalaComIdInvalido_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
             _sala.Id = 0;
-            Action action = () => _repositorio.Delete(_sala);
+            Action action = () => _repositorio.Deletar(_sala);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
@@ -116,10 +116,10 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Salas
         public void Teste_SalaRepositorio_DeletarSala_DeveSerOk()
         {
             int quantidadeEsperada = 1;
-            _sala = ObjectMother.GetSalaExistenteOk();
-            _repositorio.Delete(_sala);
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _repositorio.Deletar(_sala);
 
-            var listaSalas = _repositorio.GetAll();
+            var listaSalas = _repositorio.CarregarTodos();
             listaSalas.Count().Should().Be(quantidadeEsperada);
         }
     }

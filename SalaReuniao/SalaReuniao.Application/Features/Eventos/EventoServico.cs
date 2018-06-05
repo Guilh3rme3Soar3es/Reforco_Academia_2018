@@ -17,37 +17,37 @@ namespace SalaReuniao.Application.Features.Eventos
             _eventoRepositorio = eventoRepositorio;
         }
 
-        public Evento Add(Evento sala)
+        public Evento Adicionar(Evento sala)
         {
             sala.Validar();
-            return _eventoRepositorio.Save(sala);
+            return _eventoRepositorio.Salvar(sala);
         }
 
-        public void Delete(Evento sala)
+        public void Deletar(Evento sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
-            _eventoRepositorio.Delete(sala);
+            _eventoRepositorio.Deletar(sala);
         }
 
-        public Evento Get(long id)
+        public Evento Carregar(long id)
         {
             if (id <= 0)
                 throw new IdentifierUndefinedException();
-            return _eventoRepositorio.Get(id);
+            return _eventoRepositorio.Carregar(id);
         }
 
-        public IEnumerable<Evento> GetAll()
+        public IEnumerable<Evento> CarregarTodos()
         {
-            return _eventoRepositorio.GetAll();
+            return _eventoRepositorio.CarregarTodos();
         }
 
-        public Evento Update(Evento sala)
+        public Evento Atualizar(Evento sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
             sala.Validar();
-            return _eventoRepositorio.Update(sala);
+            return _eventoRepositorio.Atualizar(sala);
         }
     }
 }

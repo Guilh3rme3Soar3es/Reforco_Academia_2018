@@ -8,10 +8,10 @@ namespace SalaReuniao.Domain.Features.Eventos
 {
     public interface IEventoRepositorio
     {
-        Evento Save(Evento evento);
-        Evento Update(Evento evento);
-        Evento Get(long id);
-        IEnumerable<Evento> GetAll();
-        void Delete(Evento evento);
+        Evento Salvar(Evento evento);
+        Evento Atualizar(Evento evento);
+        Evento Carregar(long id);
+        IEnumerable<Evento> CarregarTodos();
+        void Deletar(Evento evento);
     }
 }

@@ -29,14 +29,14 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_Validar_DeveSerOk()
         {
-            Evento evento = ObjectMother.GetNovoEventoOk(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneNovoEventoOk(_mockFuncionario.Object, _fakeSala.Object);
             evento.Validar();
         }
 
         [Test]
         public void Teste_Evento_ValidarHorarioInicioEmHorarioNaoPermitido_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataInicioHorarioForaDoLimite(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioHorarioForaDoLimite(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataInicioForaHorarioDoLimiteException>();
         }
@@ -44,7 +44,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarHorarioTerminoEmHorarioNaoPermitido_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataTerminoHorarioForaDoLimite(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoHorarioForaDoLimite(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataTerminoHorarioForaDoLimiteException>();
         }
@@ -52,7 +52,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarDiaInicioEmHorarioNaoPermitido_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataInicioDiaNãoPermitido(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioDiaNãoPermitido(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataInicioDiaNãoPermitidoException>();
         }
@@ -60,7 +60,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarDiaTerminoEmHorarioNaoPermitido_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataTerminoDiaNãoPermitido(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoDiaNãoPermitido(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataTerminoDiaNãoPermitidoException>();
         }
@@ -68,7 +68,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarDataInicioMenorQueDataAtual_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataInicioInvalida(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioInvalida(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataInicioInvalidaException>();
         }
@@ -76,7 +76,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarDataTerminoMenorQueDataAtual_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataTerminoInvalida(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoInvalida(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataTerminoInvalidaException>();
         }
@@ -84,7 +84,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarDataInicioMaiorQueDataTermino_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComDataInicioMaiorQueDataTermino(_mockFuncionario.Object, _fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioMaiorQueDataTermino(_mockFuncionario.Object, _fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoDataInicioMaiorQueDataTerminoException>();
         }
@@ -92,7 +92,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarFuncionarioNulo_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComFuncionarioNulo(_fakeSala.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComFuncionarioNulo(_fakeSala.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoFuincionarioNuloException>();
         }
@@ -100,7 +100,7 @@ namespace SalaReuniao.Domain.Tests.Features.Eventos
         [Test]
         public void Teste_Evento_ValidarSalaNula_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.GetEventoInvalidoComSalaNula(_mockFuncionario.Object);
+            Evento evento = ObjectMother.RetorneEventoInvalidoComSalaNula(_mockFuncionario.Object);
             Action action = () => evento.Validar();
             action.Should().Throw<EventoSalaNulaException>();
         }

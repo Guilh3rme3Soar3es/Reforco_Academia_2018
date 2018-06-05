@@ -32,22 +32,22 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         public void Teste_SalaServico_SalvarSala_DeveSerOk()
         {
             long idEsperado = 1;
-            _sala = ObjectMother.GetNovaSalaOk();
-            _mockRepositorio.Setup(br => br.Save(_sala)).Returns(ObjectMother.GetSalaExistenteOk());
+            _sala = ObjectMother.RetorneNovaSalaOk();
+            _mockRepositorio.Setup(br => br.Salvar(_sala)).Returns(ObjectMother.RetorneSalaExistenteOk());
 
-            Sala salaSalva = _servico.Add(_sala);
+            Sala salaSalva = _servico.Adicionar(_sala);
 
             salaSalva.Id.Should().Be(idEsperado);
-            _mockRepositorio.Verify(br => br.Save(_sala));
+            _mockRepositorio.Verify(br => br.Salvar(_sala));
         }
 
         [Test]
         public void Teste_SalaServico_SalvarSalaInvalida_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
-            _mockRepositorio.Setup(br => br.Save(_sala)).Returns(_sala);
+            _sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresNaoInformado();
+            _mockRepositorio.Setup(br => br.Salvar(_sala)).Returns(_sala);
 
-            Action comparation = () => _servico.Add(_sala);
+            Action comparation = () => _servico.Adicionar(_sala);
 
             comparation.Should().Throw<SalaNumeroLugaresNaoInformado>();
             _mockRepositorio.VerifyNoOtherCalls();
@@ -56,23 +56,23 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         [Test]
         public void Teste_SalaServico_AtualizarSala_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            _mockRepositorio.Setup(br => br.Update(_sala)).Returns(_sala);
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _mockRepositorio.Setup(br => br.Atualizar(_sala)).Returns(_sala);
 
-            Sala salaAtualizada = _servico.Update(_sala);
+            Sala salaAtualizada = _servico.Atualizar(_sala);
 
             salaAtualizada.Id.Should().Be(_sala.Id);
-            _mockRepositorio.Verify(br => br.Update(_sala));
+            _mockRepositorio.Verify(br => br.Atualizar(_sala));
         }
 
         [Test]
         public void Teste_SalaServico_AtualizarSalaComIdInvalido_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
             _sala.Id = 0;
-            _mockRepositorio.Setup(br => br.Update(_sala));
+            _mockRepositorio.Setup(br => br.Atualizar(_sala));
 
-            Action comparation = () => _servico.Update(_sala);
+            Action comparation = () => _servico.Atualizar(_sala);
 
             comparation.Should().Throw<IdentifierUndefinedException>();
             _mockRepositorio.VerifyNoOtherCalls();
@@ -81,11 +81,11 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         [Test]
         public void Teste_SalaServico_AtualizarSalaInvalida_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
+            _sala = ObjectMother.RetorneSalaInvalidaComNumeroLugaresNaoInformado();
             _sala.Id = 1;
-            _mockRepositorio.Setup(br => br.Update(_sala));
+            _mockRepositorio.Setup(br => br.Atualizar(_sala));
 
-            Action comparation = () => _servico.Update(_sala);
+            Action comparation = () => _servico.Atualizar(_sala);
 
             comparation.Should().Throw<SalaNumeroLugaresNaoInformado>();
             _mockRepositorio.VerifyNoOtherCalls();
@@ -94,22 +94,22 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         [Test]
         public void Teste_SalaServico_CarregarSala_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            _mockRepositorio.Setup(br => br.Get(_sala.Id)).Returns(_sala);
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _mockRepositorio.Setup(br => br.Carregar(_sala.Id)).Returns(_sala);
 
-            Sala SalaEncontrada = _servico.Get(_sala.Id);
+            Sala SalaEncontrada = _servico.Carregar(_sala.Id);
 
             SalaEncontrada.Should().NotBeNull();
-            _mockRepositorio.Verify(br => br.Get(_sala.Id));
+            _mockRepositorio.Verify(br => br.Carregar(_sala.Id));
         }
 
         [Test]
         public void Teste_SalaServico_CarregarSalaComIdInvalido_DeveSerThrowException()
         {
             long idInvalido = 0;
-            _mockRepositorio.Setup(br => br.Get(idInvalido));
+            _mockRepositorio.Setup(br => br.Carregar(idInvalido));
 
-            Action comparation = () => _servico.Get(idInvalido);
+            Action comparation = () => _servico.Carregar(idInvalido);
 
             comparation.Should().Throw<IdentifierUndefinedException>();
             _mockRepositorio.VerifyNoOtherCalls();
@@ -118,34 +118,34 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         [Test]
         public void Teste_SalaServico_CarregarTodos_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            _mockRepositorio.Setup(br => br.GetAll()).Returns(new List<Sala> { _sala });
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _mockRepositorio.Setup(br => br.CarregarTodos()).Returns(new List<Sala> { _sala });
 
-            var listaSalas = _servico.GetAll();
+            var listaSalas = _servico.CarregarTodos();
 
             listaSalas.Should().NotBeNullOrEmpty();
-            _mockRepositorio.Verify(br => br.GetAll());
+            _mockRepositorio.Verify(br => br.CarregarTodos());
         }
 
         [Test]
         public void Teste_SalaServico_DeletarSala_DeveSerOk()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
-            _mockRepositorio.Setup(br => br.Delete(_sala));
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _mockRepositorio.Setup(br => br.Deletar(_sala));
 
-            _servico.Delete(_sala);
+            _servico.Deletar(_sala);
 
-            _mockRepositorio.Verify(br => br.Delete(_sala));
+            _mockRepositorio.Verify(br => br.Deletar(_sala));
         }
 
         [Test]
         public void Teste_SalaServico_DeletarSalaComIdInvalido_DeveSerThrowException()
         {
-            _sala = ObjectMother.GetSalaExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
             _sala.Id = 0;
-            _mockRepositorio.Setup(br => br.Delete(_sala));
+            _mockRepositorio.Setup(br => br.Deletar(_sala));
 
-            Action comparation = () => _servico.Delete(_sala);
+            Action comparation = () => _servico.Deletar(_sala);
 
             comparation.Should().Throw<IdentifierUndefinedException>();
             _mockRepositorio.VerifyNoOtherCalls();

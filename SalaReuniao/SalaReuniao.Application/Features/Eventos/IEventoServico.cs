@@ -9,10 +9,10 @@ namespace SalaReuniao.Application.Features.Eventos
 {
     public interface IEventoServico
     {
-        Evento Add(Evento evento);
-        Evento Update(Evento evento);
-        Evento Get(long id);
-        IEnumerable<Evento> GetAll();
-        void Delete(Evento evento);
+        Evento Adicionar(Evento evento);
+        Evento Atualizar(Evento evento);
+        Evento Carregar(long id);
+        IEnumerable<Evento> CarregarTodos();
+        void Deletar(Evento evento);
     }
 }

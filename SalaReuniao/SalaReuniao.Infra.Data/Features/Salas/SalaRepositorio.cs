@@ -29,14 +29,14 @@ namespace SalaReuniao.Infra.Data.Features.Salas
 
         #endregion#Scripts
 
-        public void Delete(Sala sala)
+        public void Deletar(Sala sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();
             Db.Delete(_deletar, new object[] { "@IdSala", sala.Id });
         }
 
-        public Sala Get(long id)
+        public Sala Carregar(long id)
         {
             if (id <= 0)
                 throw new IdentifierUndefinedException();
@@ -44,12 +44,12 @@ namespace SalaReuniao.Infra.Data.Features.Salas
 
         }
 
-        public IEnumerable<Sala> GetAll()
+        public IEnumerable<Sala> CarregarTodos()
         {
             return Db.GetAll(_carregarTodos, Make);
         }
 
-        public Sala Save(Sala sala)
+        public Sala Salvar(Sala sala)
         {
             sala.Validar();
             sala.Id = Db.Insert(_inserir, Take(sala));
@@ -57,7 +57,7 @@ namespace SalaReuniao.Infra.Data.Features.Salas
             return sala;
         }
 
-        public Sala Update(Sala sala)
+        public Sala Atualizar(Sala sala)
         {
             if (sala.Id <= 0)
                 throw new IdentifierUndefinedException();

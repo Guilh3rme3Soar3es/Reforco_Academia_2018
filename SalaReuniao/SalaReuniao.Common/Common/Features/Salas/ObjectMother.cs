@@ -11,7 +11,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
 {
     public static partial class ObjectMother
     {
-        public static Sala GetNovaSalaOk()
+        public static Sala RetorneNovaSalaOk()
         {
             return new Sala
             {
@@ -20,7 +20,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Sala GetSalaExistenteOk()
+        public static Sala RetorneSalaExistenteOk()
         {
             return new Sala
             {
@@ -30,7 +30,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Sala GetSalaInvalidaComNumeroLugaresNaoInformado()
+        public static Sala RetorneSalaInvalidaComNumeroLugaresNaoInformado()
         {
             return new Sala
             {
@@ -38,7 +38,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Sala GetSalaInvalidaComNumeroLugaresInvalido()
+        public static Sala RetorneSalaInvalidaComNumeroLugaresInvalido()
         {
             return new Sala
             {

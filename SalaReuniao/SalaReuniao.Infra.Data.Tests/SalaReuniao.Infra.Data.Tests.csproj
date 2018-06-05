@@ -61,6 +61,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Funcionarios\FuncionarioTestesRepositorio.cs" />
     <Compile Include="Features\Salas\SalaTestesRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\Eventos\" />
-    <Folder Include="Features\Funcionarios\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SalaReuniao.Common\SalaReuniao.Common.csproj">

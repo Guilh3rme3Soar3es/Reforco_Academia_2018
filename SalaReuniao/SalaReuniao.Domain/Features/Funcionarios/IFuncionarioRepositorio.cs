@@ -8,10 +8,10 @@ namespace SalaReuniao.Domain.Features.Funcionarios
 {
     public interface IFuncionarioRepositorio
     {
-        Funcionario Save(Funcionario funcionario);
-        Funcionario Update(Funcionario funcionario);
-        Funcionario Get(long id);
-        IEnumerable<Funcionario> GetAll();
-        void Delete(Funcionario funcionario);
+        Funcionario Salvar(Funcionario funcionario);
+        Funcionario Atualizar(Funcionario funcionario);
+        Funcionario Carregar(long id);
+        IEnumerable<Funcionario> CarregarTodos();
+        void Deletar(Funcionario funcionario);
     }
 }

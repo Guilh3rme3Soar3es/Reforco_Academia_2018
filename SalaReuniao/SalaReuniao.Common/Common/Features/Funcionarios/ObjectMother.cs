@@ -9,7 +9,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
 {
     public static partial class ObjectMother
     {
-        public static Funcionario GetNovoFuncionarioOk()
+        public static Funcionario RetorneNovoFuncionarioOk()
         {
             return new Funcionario
             {
@@ -19,7 +19,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioExistenteOk()
+        public static Funcionario RetorneFuncionarioExistenteOk()
         {
             return new Funcionario
             {
@@ -30,7 +30,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComNomeNaoInformado()
+        public static Funcionario RetorneFuncionarioComNomeNaoInformado()
         {
             return new Funcionario
             {
@@ -40,7 +40,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComNomeLongo()
+        public static Funcionario RetorneFuncionarioComNomeLongo()
         {
             return new Funcionario
             {
@@ -50,7 +50,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComCargoNaoInformado()
+        public static Funcionario RetorneFuncionarioComCargoNaoInformado()
         {
             return new Funcionario
             {
@@ -60,7 +60,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComCargoLongo()
+        public static Funcionario RetorneFuncionarioComCargoLongo()
         {
             return new Funcionario
             {
@@ -70,7 +70,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComRamalNaoInformado()
+        public static Funcionario RetorneFuncionarioComRamalNaoInformado()
         {
             return new Funcionario
             {
@@ -80,7 +80,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Funcionario GetFuncionarioComRamalInvalido()
+        public static Funcionario RetorneFuncionarioComRamalInvalido()
         {
             return new Funcionario
             {

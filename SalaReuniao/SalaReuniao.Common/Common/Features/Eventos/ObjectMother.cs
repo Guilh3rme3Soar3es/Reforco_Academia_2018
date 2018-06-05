@@ -11,7 +11,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
 {
     public static partial class ObjectMother
     {
-        public static Evento GetNovoEventoOk(Funcionario funcionario, Sala sala)
+        public static Evento RetorneNovoEventoOk(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -22,7 +22,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoExistenteOk(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoExistenteOk(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -34,7 +34,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataInicioHorarioForaDoLimite(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataInicioHorarioForaDoLimite(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -45,7 +45,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataTerminoHorarioForaDoLimite(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataTerminoHorarioForaDoLimite(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -56,7 +56,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataTerminoDiaNãoPermitido(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataTerminoDiaNãoPermitido(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -67,7 +67,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataInicioDiaNãoPermitido(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataInicioDiaNãoPermitido(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -78,7 +78,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataInicioInvalida(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataInicioInvalida(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -89,7 +89,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataTerminoInvalida(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataTerminoInvalida(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -100,7 +100,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComDataInicioMaiorQueDataTermino(Funcionario funcionario, Sala sala)
+        public static Evento RetorneEventoInvalidoComDataInicioMaiorQueDataTermino(Funcionario funcionario, Sala sala)
         {
             return new Evento
             {
@@ -111,7 +111,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComFuncionarioNulo(Sala sala)
+        public static Evento RetorneEventoInvalidoComFuncionarioNulo(Sala sala)
         {
             return new Evento
             {
@@ -122,7 +122,7 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             };
         }
 
-        public static Evento GetEventoInvalidoComSalaNula(Funcionario funcionario)
+        public static Evento RetorneEventoInvalidoComSalaNula(Funcionario funcionario)
         {
             return new Evento
             {

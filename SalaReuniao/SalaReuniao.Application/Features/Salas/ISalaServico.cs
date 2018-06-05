@@ -9,10 +9,10 @@ namespace SalaReuniao.Application.Features.Salas
 {
     public interface ISalaServico
     {
-        Sala Add(Sala sala);
-        Sala Update(Sala sala);
-        Sala Get(long id);
-        IEnumerable<Sala> GetAll();
-        void Delete(Sala sala);
+        Sala Adicionar(Sala sala);
+        Sala Atualizar(Sala sala);
+        Sala Carregar(long id);
+        IEnumerable<Sala> CarregarTodos();
+        void Deletar(Sala sala);
     }
 }

@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using SalaReuniao.Common.Base;
 using SalaReuniao.Common.Common.Features.ObjectMothers;
+using SalaReuniao.Domain.Exceptions;
 using SalaReuniao.Domain.Features.Funcionarios;
 using SalaReuniao.Infra.Data.Features.Funcionarios;
 using System;
@@ -26,100 +27,100 @@ namespace SalaReuniao.Infra.Data.Tests.Features.Funcionarios
         }
 
         [Test]
-        public void Teste_SalaRepositorio_SalvarSala_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_SalvarFuncionario_DeveSerOk()
         {
             long idEsperado = 3;
-            funcionario = ObjectMother.GetNovaSalaOk();
-            Sala salaSalva = _repositorio.Save(funcionario);
-            salaSalva.Id.Should().Be(idEsperado);
+            funcionario = ObjectMother.RetorneNovoFuncionarioOk();
+            Funcionario funcionarioSalvo = _repositorio.Salvar(funcionario);
+            funcionarioSalvo.Id.Should().Be(idEsperado);
         }
 
         [Test]
-        public void Teste_SalaRepositorio_SalvarSalaInvalida_DeveSerThrowException()
+        public void Teste_FuncionarioRepositorio_SalvarFuncionarioInvalida_DeveSerThrowException()
         {
-            funcionario = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
-            Action action = () => _repositorio.Save(funcionario);
-            action.Should().Throw<SalaNumeroLugaresNaoInformado>();
+            funcionario = ObjectMother.RetorneFuncionarioComNomeNaoInformado();
+            Action action = () => _repositorio.Salvar(funcionario);
+            action.Should().Throw<FuncionarioNomeNuloOuVazioException>();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_AtualizarSala_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_AtualizarFuncionario_DeveSerOk()
         {
-            funcionario = ObjectMother.GetSalaExistenteOk();
-            Sala salaAtualizada = _repositorio.Update(funcionario);
-            salaAtualizada.Should().Be(funcionario);
+            funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            Funcionario funcionarioAtualizado = _repositorio.Atualizar(funcionario);
+            funcionarioAtualizado.Should().Be(funcionario);
         }
 
         [Test]
-        public void Teste_SalaRepositorio_AtualizarSalaInvalida_DeveSerThrowException()
+        public void Teste_FuncionarioRepositorio_AtualizarFuncionarioInvalida_DeveSerThrowException()
         {
-            funcionario = ObjectMother.GetSalaInvalidaComNumeroLugaresNaoInformado();
+            funcionario = ObjectMother.RetorneFuncionarioComNomeNaoInformado();
             funcionario.Id = 1;
-            Action action = () => _repositorio.Update(funcionario);
-            action.Should().Throw<SalaNumeroLugaresNaoInformado>();
+            Action action = () => _repositorio.Atualizar(funcionario);
+            action.Should().Throw<FuncionarioNomeNuloOuVazioException>();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_AtualizarSalaComIdInvalido_DeveSerThrowException()
+        public void Teste_FuncionarioRepositorio_AtualizarFuncionarioComIdInvalido_DeveSerThrowException()
         {
-            funcionario = ObjectMother.GetNovaSalaOk();
-            Action action = () => _repositorio.Update(funcionario);
+            funcionario = ObjectMother.RetorneNovoFuncionarioOk();
+            Action action = () => _repositorio.Atualizar(funcionario);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_CarregarSala_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_CarregarFuncionario_DeveSerOk()
         {
-            funcionario = ObjectMother.GetSalaExistenteOk();
-            Sala salaEncontrada = _repositorio.Get(funcionario.Id);
-            salaEncontrada.Should().NotBeNull();
-            salaEncontrada.Id.Should().Be(funcionario.Id);
+            funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            Funcionario funcionarioEncontrado = _repositorio.Carregar(funcionario.Id);
+            funcionarioEncontrado.Should().NotBeNull();
+            funcionarioEncontrado.Id.Should().Be(funcionario.Id);
         }
 
         [Test]
-        public void Teste_SalaRepositorio_CarregarSalaComIdInvalido_DeveSerThrowException()
+        public void Teste_FuncionarioRepositorio_CarregarFuncionarioComIdInvalido_DeveSerThrowException()
         {
             long idInvalido = 0;
-            Action action = () => _repositorio.Get(idInvalido);
+            Action action = () => _repositorio.Carregar(idInvalido);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_CarregarSalaIdNaoEncontrado_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_CarregarFuncionarioIdNaoEncontrado_DeveSerOk()
         {
-            funcionario = ObjectMother.GetSalaExistenteOk();
+            funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
             funcionario.Id = 100;
-            Sala salaEncontrada = _repositorio.Get(funcionario.Id);
-            salaEncontrada.Should().BeNull();
+            Funcionario funcionarioEncontrado = _repositorio.Carregar(funcionario.Id);
+            funcionarioEncontrado.Should().BeNull();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_CarregarTodos_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_CarregarTodos_DeveSerOk()
         {
             int quantidadeEsperada = 2;
-            var listaSalas = _repositorio.GetAll();
+            var listaSalas = _repositorio.CarregarTodos();
             listaSalas.Should().NotBeNullOrEmpty();
             listaSalas.Count().Should().Be(quantidadeEsperada);
         }
 
         [Test]
-        public void Teste_SalaRepositorio_DeletarSalaComIdInvalido_DeveSerThrowException()
+        public void Teste_FuncionarioRepositorio_DeletarFuncionarioComIdInvalido_DeveSerThrowException()
         {
-            funcionario = ObjectMother.GetSalaExistenteOk();
+            funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
             funcionario.Id = 0;
-            Action action = () => _repositorio.Delete(funcionario);
+            Action action = () => _repositorio.Deletar(funcionario);
             action.Should().Throw<IdentifierUndefinedException>();
         }
 
         [Test]
-        public void Teste_SalaRepositorio_DeletarSala_DeveSerOk()
+        public void Teste_FuncionarioRepositorio_DeletarFuncionario_DeveSerOk()
         {
             int quantidadeEsperada = 1;
-            funcionario = ObjectMother.GetSalaExistenteOk();
-            _repositorio.Delete(funcionario);
+            funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            _repositorio.Deletar(funcionario);
 
-            var listaSalas = _repositorio.GetAll();
-            listaSalas.Count().Should().Be(quantidadeEsperada);
+            var listaFuncionarios = _repositorio.CarregarTodos();
+            listaFuncionarios.Count().Should().Be(quantidadeEsperada);
         }
     }
 }
