@@ -45,12 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Salas\SalaRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\Eventos\" />
     <Folder Include="Features\Funcionarios\" />
-    <Folder Include="Features\Salas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SalaReuniao.Domain\SalaReuniao.Domain.csproj">
+      <Project>{D534E8E1-E67E-4C4D-BF2E-8EC93DC52EE6}</Project>
+      <Name>SalaReuniao.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalaReuniao.Infra\SalaReuniao.Infra.csproj">
+      <Project>{CC25C1E6-D624-4FCE-B338-7F4D90FCA817}</Project>
+      <Name>SalaReuniao.Infra</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

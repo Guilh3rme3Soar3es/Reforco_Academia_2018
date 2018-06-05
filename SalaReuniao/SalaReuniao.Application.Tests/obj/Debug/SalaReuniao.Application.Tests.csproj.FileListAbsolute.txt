@@ -41,3 +41,6 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Ap
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Application.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Common.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Application.Tests\bin\Debug\SalaReuniao.Infra.dll.config

@@ -29,3 +29,12 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.In
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\obj\Debug\SalaReuniao.Infra.Data.Tests.csprojResolveAssemblyReference.cache
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Common.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Domain.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.Data.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.dll
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Common.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Domain.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.Data.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.pdb
+H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Infra.Data.Tests\bin\Debug\SalaReuniao.Infra.dll.config

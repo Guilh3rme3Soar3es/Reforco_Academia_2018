@@ -1,0 +1,19 @@
+﻿** Destaques
+     Tabelas que serão recriadas
+       Nenhum
+     Índices clusterizados que serão removidos
+       Nenhum
+     Índices clusterizados que serão criados
+       Nenhum
+     Possíveis problemas de dados
+       Nenhum
+
+** Ações do usuário
+     Criar
+       [dbo].[TBEvento] (Tabela)
+       [dbo].[TBFuncionario] (Tabela)
+       [dbo].[TBSala] (Tabela)
+       [dbo].[FK_TBEvento_TBFuncionario] (Chave Estrangeira)
+       [dbo].[FK_TBEvento_TBSala] (Chave Estrangeira)
+
+** Ações de suporte

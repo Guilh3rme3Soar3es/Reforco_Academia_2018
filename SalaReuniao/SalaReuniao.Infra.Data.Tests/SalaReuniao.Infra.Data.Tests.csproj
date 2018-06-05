@@ -61,6 +61,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Salas\SalaTestesRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,7 +71,20 @@
   <ItemGroup>
     <Folder Include="Features\Eventos\" />
     <Folder Include="Features\Funcionarios\" />
-    <Folder Include="Features\Salas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SalaReuniao.Common\SalaReuniao.Common.csproj">
+      <Project>{272EA7EC-F835-4244-BC25-F64F8D2F1B25}</Project>
+      <Name>SalaReuniao.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalaReuniao.Domain\SalaReuniao.Domain.csproj">
+      <Project>{D534E8E1-E67E-4C4D-BF2E-8EC93DC52EE6}</Project>
+      <Name>SalaReuniao.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalaReuniao.Infra.Data\SalaReuniao.Infra.Data.csproj">
+      <Project>{C770E48E-8F4E-4C81-96F7-3327BDA69D6A}</Project>
+      <Name>SalaReuniao.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
