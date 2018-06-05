@@ -71,16 +71,15 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Salas\SalaTestesServico.cs" />
+    <Compile Include="Features\Eventos\EventoTestesAplicacao.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioTestesAplicacao.cs" />
+    <Compile Include="Features\Salas\SalaTestesAplicacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Eventos\" />
-    <Folder Include="Features\Funcionarios\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SalaReuniao.Application\SalaReuniao.Application.csproj">
       <Project>{9219CDD1-5EC7-4DDA-A5D5-21D5DC534E24}</Project>

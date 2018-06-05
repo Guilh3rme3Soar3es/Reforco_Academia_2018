@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace SalaReuniao.Application.Tests.Features.Salas
 {
     [TestFixture]
-    public class SalaTestesServico
+    public class SalaTestesAplicacao
     {
         private Mock<ISalaRepositorio> _mockRepositorio;
         private ISalaServico _servico;
@@ -128,7 +128,7 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         }
 
         [Test]
-        public void Book_TesteService_DeleteBook_SouldBeOk()
+        public void Teste_SalaServico_DeletarSala_DeveSerOk()
         {
             _sala = ObjectMother.GetSalaExistenteOk();
             _mockRepositorio.Setup(br => br.Delete(_sala));
@@ -139,7 +139,7 @@ namespace SalaReuniao.Application.Tests.Features.Salas
         }
 
         [Test]
-        public void Book_TesteService_DeleteBook_InvalidId_SouldBeFail()
+        public void Teste_SalaServico_DeletarSalaComIdInvalido_DeveSerThrowException()
         {
             _sala = ObjectMother.GetSalaExistenteOk();
             _sala.Id = 0;

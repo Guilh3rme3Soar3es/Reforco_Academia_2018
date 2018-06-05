@@ -27,8 +27,8 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
             return new Evento
             {
                 Id = 1,
-                DataInicio = DateTime.Now.AddDays(+1),
-                DataTermino = DateTime.Now.AddDays(+2),
+                DataInicio = DateTime.Parse("24/03/2020 14:00:00"),
+                DataTermino = DateTime.Parse("24/03/2020 16:00:00"),
                 Funcionario = funcionario,
                 Sala = sala
             };

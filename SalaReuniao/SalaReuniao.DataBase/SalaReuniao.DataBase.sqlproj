@@ -57,5 +57,15 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="DBO" />
+    <Folder Include="DBO\Tabelas" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="DBO\Tabelas\TBSala.sql" />
+    <Build Include="DBO\Tabelas\TBFuncionario.sql" />
+    <Build Include="DBO\Tabelas\TBEvento.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SalaReuniao.DataBase.refactorlog" />
   </ItemGroup>
 </Project>
