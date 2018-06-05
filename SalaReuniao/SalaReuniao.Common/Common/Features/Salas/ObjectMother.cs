@@ -11,53 +11,39 @@ namespace SalaReuniao.Common.Common.Features.ObjectMothers
 {
     public static partial class ObjectMother
     {
-        public static Sala GetNovaSalaOk(Evento evento)
+        public static Sala GetNovaSalaOk()
         {
             return new Sala
             {
                 Nome = Nome.TREINAMENTO,
                 NumeroLugares = 32,
-                Eventos = new List<Evento> { evento }
             };
         }
 
-        public static Sala GetSalaExistenteOk(Evento evento)
+        public static Sala GetSalaExistenteOk()
         {
             return new Sala
             {
                 Id = 1,
                 Nome = Nome.TREINAMENTO,
                 NumeroLugares = 32,
-                Eventos = new List<Evento> { evento }
             };
         }
 
-        public static Sala GetSalaInvalidaComNumeroLugaresNaoInformado(Evento evento)
+        public static Sala GetSalaInvalidaComNumeroLugaresNaoInformado()
         {
             return new Sala
             {
                 Nome = Nome.TREINAMENTO,
-                Eventos = new List<Evento> { evento }
             };
         }
 
-        public static Sala GetSalaInvalidaComNumeroLugaresInvalido(Evento evento)
+        public static Sala GetSalaInvalidaComNumeroLugaresInvalido()
         {
             return new Sala
             {
                 Nome = Nome.TREINAMENTO,
                 NumeroLugares = -1,
-                Eventos = new List<Evento> { evento }
-            };
-        }
-
-        public static Sala GetSalaInvalidaComEventosNoMesmoHorario(Evento primeiroEvento,Evento segundoEvento)
-        {
-            return new Sala
-            {
-                Nome = Nome.TREINAMENTO,
-                NumeroLugares = 32,
-                Eventos = new List<Evento> { primeiroEvento, segundoEvento }
             };
         }
     }

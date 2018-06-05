@@ -21,7 +21,6 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Do
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Domain.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\System.ValueTuple.dll
-H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Infra.dll
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Common.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Domain.pdb
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\Castle.Core.xml
@@ -35,8 +34,6 @@ H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Do
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\nunit.framework.xml
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\System.ValueTuple.xml
-H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Infra.pdb
-H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\bin\Debug\SalaReuniao.Infra.dll.config
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\obj\Debug\SalaReuniao.Domain.Tests.csprojResolveAssemblyReference.cache
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\obj\Debug\SalaReuniao.Domain.Tests.csproj.CoreCompileInputs.cache
 H:\Reforco-Academia-Programador\Reforco_Academia_2018\SalaReuniao\SalaReuniao.Domain.Tests\obj\Debug\SalaReuniao.Domain.Tests.csproj.CopyComplete

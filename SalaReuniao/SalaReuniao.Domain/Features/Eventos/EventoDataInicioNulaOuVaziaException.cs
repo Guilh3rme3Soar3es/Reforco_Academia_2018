@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SalaReuniao.Domain.Features.Eventos
 {
-    public class EventoListaFuincionariosNulaOuVaziaException : BusinessException
+    public class EventoFuincionarioNuloException : BusinessException
     {
-        public EventoListaFuincionariosNulaOuVaziaException() : base("Evento com lista de funcionarios nula oi vazia.")
+        public EventoFuincionarioNuloException() : base("Evento com lista de funcionarios nula oi vazia.")
         {
         }
     }

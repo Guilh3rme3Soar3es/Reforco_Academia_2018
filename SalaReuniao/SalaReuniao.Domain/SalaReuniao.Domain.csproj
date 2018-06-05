@@ -53,6 +53,7 @@
     <Compile Include="Features\Eventos\EventoDataTerminoDiaNãoPermitidoException.cs" />
     <Compile Include="Features\Eventos\EventoDataTerminoHorarioForaDoLimite.cs" />
     <Compile Include="Features\Eventos\EventoDataTerminoInvalidaException.cs" />
+    <Compile Include="Features\Eventos\EventoSalaNullaException.cs" />
     <Compile Include="Features\Eventos\IEventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\Funcionario.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioCargoNuloOuVazioException.cs" />
@@ -64,7 +65,6 @@
     <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\ISalaRepositorio.cs" />
     <Compile Include="Features\Salas\Sala.cs" />
-    <Compile Include="Features\Salas\SalaEventosNoMesmoHorarioException.cs" />
     <Compile Include="Features\Salas\SalaNumeroLugaresInvalido.cs" />
     <Compile Include="Features\Salas\SalaNumeroLugaresNaoInformado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

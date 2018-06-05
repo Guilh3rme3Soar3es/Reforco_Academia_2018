@@ -1,5 +1,6 @@
 ﻿using SalaReuniao.Domain.Common;
 using SalaReuniao.Domain.Features.Funcionarios;
+using SalaReuniao.Domain.Features.Salas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace SalaReuniao.Domain.Features.Eventos
     {
         public virtual DateTime DataInicio { get; set; }
         public virtual DateTime DataTermino { get; set; }
-        public IList<Funcionario> Funcionarios { get; set; }
+        public Funcionario Funcionario { get; set; }
+        public Sala Sala { get; set; }
 
         public override void Validar()
         {
@@ -30,8 +32,10 @@ namespace SalaReuniao.Domain.Features.Eventos
                 throw new EventoDataTerminoInvalidaException();
             if (DataInicio > DataTermino)
                 throw new EventoDataInicioMaiorQueDataTerminoException();
-            if (Funcionarios == null || Funcionarios.Count == 0)
-                throw new EventoListaFuincionariosNulaOuVaziaException();
+            if (Funcionario == null)
+                throw new EventoFuincionarioNuloException();
+            if (Sala == null)
+                throw new EventoSalaNulaException();
 
         }
     }

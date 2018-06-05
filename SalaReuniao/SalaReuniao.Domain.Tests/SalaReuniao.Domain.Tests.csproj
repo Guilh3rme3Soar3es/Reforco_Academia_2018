@@ -73,7 +73,7 @@
   <ItemGroup>
     <Compile Include="Features\Eventos\EventoDomainTests.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioDomainTests.cs" />
-    <Compile Include="Features\Salas\SalaDomainTests.cs" />
+    <Compile Include="Features\Salas\SalaTestesDominio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
