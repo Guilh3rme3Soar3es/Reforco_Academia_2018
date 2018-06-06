@@ -21,7 +21,6 @@ namespace SalaReuniao.Infra.Data.Features.Eventos
 
         private const string _carregarPorId = "SELECT * FROM TBEvento INNER JOIN TBFuncionario ON funcionario_id = id_funcionario INNER JOIN TBSala ON sala_id = id_sala WHERE id_evento = @IdEvento";
 
-        //teste...
         private const string _carregarPorHorario = "SELECT * FROM TBEvento INNER JOIN TBFuncionario ON funcionario_id = id_funcionario " +
                                                                           "INNER JOIN TBSala ON sala_id = id_sala" +
                                                     " WHERE sala_id = @SalaId AND data_inicio = @Data_inicio " +

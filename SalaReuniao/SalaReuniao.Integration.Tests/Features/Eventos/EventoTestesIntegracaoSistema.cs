@@ -33,7 +33,7 @@ namespace SalaReuniao.Integration.Tests.Features.Eventos
             _servico = new EventoServico(_repositorio);
 
             _sala = ObjectMother.RetorneSalaExistenteOk();
-            _funcionario = ObjectMother.RetorneNovoFuncionarioOk();
+            _funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
         }
 
         [Test]
@@ -45,52 +45,207 @@ namespace SalaReuniao.Integration.Tests.Features.Eventos
         }
 
         [Test]
-        public void Teste_EventoIntegracao_SalvareventoComNumeroLugaresNaoInformado_DeveSerThrowException()
+        public void Teste_EventoIntegracao_SalvarEventoComHorarioOcupado_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.RetorneeventoInvalidaComNumeroLugaresNaoInformado();
+            _sala.Id = 2;
+            Evento evento = ObjectMother.RetorneNovoEventoOk(_funcionario, _sala);
             Action action = () => _servico.Adicionar(evento);
-            action.Should().Throw<eventoNumeroLugaresNaoInformado>();
+            action.Should().Throw<EventoEmHorarioOcupadoException>();
         }
 
         [Test]
-        public void Teste_EventoIntegracao_SalvareventoComNumeroLugaresInvalido_DeveSerThrowException()
+        public void Teste_EventoIntegracao_SalvarEventoComHorarioInicioForaDoLimite_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.RetorneeventoInvalidaComNumeroLugaresInvalido();
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioHorarioForaDoLimite(_funcionario,_sala);
             Action action = () => _servico.Adicionar(evento);
-            action.Should().Throw<eventoNumeroLugaresInvalido>();
+            action.Should().Throw<EventoDataInicioForaHorarioDoLimiteException>();
         }
 
         [Test]
-        public void Teste_EventoIntegracao_Atualizarevento_DeveSerOk()
+        public void Teste_EventoIntegracao_SalvarEventoComHorarioTerminoForaDoLimite_DeveSerThrowException()
         {
-            Evento evento = ObjectMother.RetorneeventoExistenteOk();
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoHorarioForaDoLimite(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataTerminoHorarioForaDoLimiteException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComInicioEmDiaNaoPermitido_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioDiaNãoPermitido(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataInicioDiaNãoPermitidoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComTerminoEmDiaNaoPermitido_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoDiaNãoPermitido(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataTerminoDiaNãoPermitidoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComDataInicioInvalida_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioInvalida(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataInicioInvalidaException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComDataTerminoInvalida_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoInvalida(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataTerminoInvalidaException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComDataInicioMaiorQueDataTermino_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioMaiorQueDataTermino(_funcionario, _sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoDataInicioMaiorQueDataTerminoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComFuncionarioNaoInformado_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComFuncionarioNulo(_sala);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoFuincionarioNuloException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_SalvarEventoComSalaNaoInformada_DeveSerThrowException()
+        {
+            Evento evento = ObjectMother.RetorneEventoInvalidoComSalaNula(_funcionario);
+            Action action = () => _servico.Adicionar(evento);
+            action.Should().Throw<EventoSalaNulaException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEvento_DeveSerOk()
+        {
+            Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
             evento = _servico.Atualizar(evento);
 
             Evento resultado = _servico.Carregar(evento.Id);
             resultado.Should().NotBeNull();
-            resultado.Nome.Should().Be(evento.Nome);
+            resultado.DataInicio.Should().Be(evento.DataInicio);
         }
 
         [Test]
-        public void Teste_EventoIntegracao_AtualizareventoComNumeroLugaresNaoInformado_DeveSerThrowException()
+        public void Teste_EventoIntegracao_AtualizarEventoComHorarioOcupado_DeveSerThrowException()
         {
             int idExistente = 1;
-            Evento evento = ObjectMother.RetorneeventoInvalidaComNumeroLugaresNaoInformado();
+            _sala.Id = 2;
+            Evento evento = ObjectMother.RetorneNovoEventoOk(_funcionario, _sala);
             evento.Id = idExistente;
             Action action = () => _servico.Atualizar(evento);
 
-            action.Should().Throw<eventoNumeroLugaresNaoInformado>();
+            action.Should().Throw<EventoEmHorarioOcupadoException>();
         }
 
         [Test]
-        public void Teste_EventoIntegracao_AtualizareventoComNumeroLugaresInvalido_DeveSerThrowException()
+        public void Teste_EventoIntegracao_AtualizarEventoComHorarioInicioForaDoLimite_DeveSerThrowException()
         {
             int idExistente = 1;
-            Evento evento = ObjectMother.RetorneeventoInvalidaComNumeroLugaresInvalido();
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioHorarioForaDoLimite(_funcionario, _sala);
             evento.Id = idExistente;
             Action action = () => _servico.Atualizar(evento);
 
-            action.Should().Throw<eventoNumeroLugaresInvalido>();
+            action.Should().Throw<EventoDataInicioForaHorarioDoLimiteException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComHorarioTerminoForaDoLimite_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoHorarioForaDoLimite(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataTerminoHorarioForaDoLimiteException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComInicioEmDiaNaoPermitido_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioDiaNãoPermitido(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataInicioDiaNãoPermitidoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComTerminoEmDiaNaoPermitido_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoDiaNãoPermitido(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataTerminoDiaNãoPermitidoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComDataInicioInvalida_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioInvalida(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataInicioInvalidaException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComDataTerminoInvalida_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataTerminoInvalida(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataTerminoInvalidaException>();
+        }
+        
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComDataInicioMaiorQueDataTermino_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComDataInicioMaiorQueDataTermino(_funcionario, _sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoDataInicioMaiorQueDataTerminoException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComFuncionarioNaoInformado_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComFuncionarioNulo(_sala);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoFuincionarioNuloException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_AtualizarEventoComSalaNaoInformado_DeveSerThrowException()
+        {
+            int idExistente = 1;
+            Evento evento = ObjectMother.RetorneEventoInvalidoComSalaNula(_funcionario);
+            evento.Id = idExistente;
+            Action action = () => _servico.Atualizar(evento);
+
+            action.Should().Throw<EventoSalaNulaException>();
         }
 
         [Test]
@@ -137,7 +292,7 @@ namespace SalaReuniao.Integration.Tests.Features.Eventos
         [Test]
         public void Teste_EventoIntegracao_CarregarTodos_DeveSerOk()
         {
-            int queantidadeEsperada = 2;
+            int queantidadeEsperada = 1;
             var listaeventos = _servico.CarregarTodos();
 
             listaeventos.Should().NotBeNullOrEmpty();
@@ -155,7 +310,7 @@ namespace SalaReuniao.Integration.Tests.Features.Eventos
         }
 
         [Test]
-        public void Teste_EventoIntegracao_DeletarevEntoComIdInvalido_DeveSerThrowException()
+        public void Teste_EventoIntegracao_DeletarEventoComIdInvalido_DeveSerThrowException()
         {
             int idInvalido = 0;
             Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
@@ -166,14 +321,53 @@ namespace SalaReuniao.Integration.Tests.Features.Eventos
         }
 
         [Test]
-        public void Teste_EventoIntegracao_DeletarevEntoRelacionadaComEvento_DeveSerThrowException()
+        public void Teste_EventoIntegracao_CarregarPorFuncionario_DeveSerOk()
         {
             int idRelacionado = 2;
-            Evento evento = ObjectMother.RetorneeventoExistenteOk();
-            evento.Id = idRelacionado;
-            Action action = () => _servico.Deletar(evento);
+            int quantidadeEsperada = 1;
+            _funcionario.Id = idRelacionado;
+            Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
 
-            action.Should().Throw<eventoRelacionadaComEventoException>();
+            var listaEventos = _servico.CarregarPorFuncionarios(evento.Funcionario.Id);
+            listaEventos.Should().NotBeNullOrEmpty();
+            listaEventos.Count().Should().Be(quantidadeEsperada);
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_CarregarPorFuncionarioComIdInvalido_DeveSerThrowException()
+        {
+            int idInvalido = 0;
+            _funcionario.Id = idInvalido;
+            Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
+            evento.Id = idInvalido;
+            Action action = () => _servico.CarregarPorFuncionarios(evento.Funcionario.Id);
+
+            action.Should().Throw<IdentifierUndefinedException>();
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_CarregarPorSala_DeveSerOk()
+        {
+            int idRelacionado = 2;
+            int quantidadeEsperada = 1;
+            _sala.Id = idRelacionado;
+            Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
+
+            var listaEventos = _servico.CarregarPorSala(evento.Sala.Id);
+            listaEventos.Should().NotBeNullOrEmpty();
+            listaEventos.Count().Should().Be(quantidadeEsperada);
+        }
+
+        [Test]
+        public void Teste_EventoIntegracao_CarregarPorSalaComIdInvalido_DeveSerThrowException()
+        {
+            int idInvalido = 0;
+            _sala.Id = idInvalido;
+            Evento evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
+            evento.Id = idInvalido;
+            Action action = () => _servico.CarregarPorSala(evento.Sala.Id);
+
+            action.Should().Throw<IdentifierUndefinedException>();
         }
     }
 }
