@@ -45,13 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Eventos\EventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\SalaRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Eventos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SalaReuniao.Domain\SalaReuniao.Domain.csproj">
       <Project>{D534E8E1-E67E-4C4D-BF2E-8EC93DC52EE6}</Project>

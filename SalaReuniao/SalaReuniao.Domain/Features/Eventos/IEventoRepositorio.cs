@@ -13,5 +13,6 @@ namespace SalaReuniao.Domain.Features.Eventos
         Evento Carregar(long id);
         IEnumerable<Evento> CarregarTodos();
         void Deletar(Evento evento);
+        IEnumerable<Evento> CarregarPorHorario(Evento evento);
     }
 }

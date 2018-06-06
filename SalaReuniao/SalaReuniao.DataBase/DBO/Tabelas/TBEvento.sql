@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[TBEvento]
 (
 	[id_evento] INT NOT NULL IDENTITY(1,1), 
-    [data_inicio] DATE NOT NULL, 
-    [data_termino] DATE NOT NULL, 
+    [data_inicio] DATETIME NOT NULL, 
+    [data_termino] DATETIME NOT NULL, 
     [funcionario_id] INT NOT NULL, 
     [sala_id] INT NOT NULL, 
     CONSTRAINT [FK_TBEvento_TBFuncionario] FOREIGN KEY ([funcionario_id]) REFERENCES [TBFuncionario]([id_funcionario]), 

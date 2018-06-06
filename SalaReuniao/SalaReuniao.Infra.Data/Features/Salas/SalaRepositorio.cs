@@ -14,12 +14,12 @@ namespace SalaReuniao.Infra.Data.Features.Salas
     public class SalaRepositorio : ISalaRepositorio
     {
         #region#Scripts
-        private const string _inserir = "INSERT INTO TBSala (nome, numero_lugares) " +
+        private const string _inserir = "INSERT INTO TBSala (nome_sala, numero_lugares) " +
                                     "VALUES (@Nome, @NumeroLugares)";
 
         private const string _carregarPorId = "SELECT * FROM TBSala WHERE id_sala = @IdSala";
 
-        private const string _atualizar = "UPDATE TBSala SET nome = @Nome, " +
+        private const string _atualizar = "UPDATE TBSala SET nome_sala = @Nome, " +
                                                             "numero_lugares = @NumeroLugares " +
                                                             "WHERE id_sala = @IdSala";
 
@@ -72,7 +72,7 @@ namespace SalaReuniao.Infra.Data.Features.Salas
            new Sala
            {
                Id = Convert.ToInt64(reader["id_sala"]),
-               Nome = (Nome)Enum.Parse(typeof(Nome), Convert.ToString(reader["nome"])),
+               Nome = (Nome)Enum.Parse(typeof(Nome), Convert.ToString(reader["nome_sala"])),
                NumeroLugares = Convert.ToInt32(reader["numero_lugares"])
            };
 

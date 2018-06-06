@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[TBSala]
 (
 	[id_sala] INT NOT NULL IDENTITY(1,1), 
-    [nome] VARCHAR(50) NOT NULL, 
+    [nome_sala] VARCHAR(50) NOT NULL, 
     [numero_lugares] INT NOT NULL
 	CONSTRAINT [PK_Sala] PRIMARY KEY CLUSTERED
 

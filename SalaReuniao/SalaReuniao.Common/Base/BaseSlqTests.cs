@@ -13,13 +13,13 @@ namespace SalaReuniao.Common.Base
         private const string RECRIAR_TBSALA = "DELETE FROM [dbo].[TBSala] DBCC CHECKIDENT('TBSala', RESEED, 0)";
         private const string RECRIAR_TBFUINCIONARIO = "DELETE FROM [dbo].[TBFuncionario] DBCC CHECKIDENT('TBFuncionario', RESEED, 0)";
 
-        private const string INSERIR_SALA = "INSERT INTO TBSala (nome,numero_lugares) VALUES ('TREINAMENTO', 32)";
-        private const string INSERIR_SALA_SEMDEPENDENCIAS = "INSERT INTO TBSala (nome,numero_lugares) VALUES ('REUNIAO', 32)";
+        private const string INSERIR_SALA = "INSERT INTO TBSala (nome_sala,numero_lugares) VALUES ('TREINAMENTO', 32)";
+        private const string INSERIR_SALA_SEMDEPENDENCIAS = "INSERT INTO TBSala (nome_sala,numero_lugares) VALUES ('REUNIAO', 32)";
 
         private const string INSERIR_FUNCIONARIO = "INSERT INTO TBFuncionario (nome,cargo,ramal) VALUES ('João da Silva', 'Diretor', '1234')";
         private const string INSERIR_FUNCIONARIO_SEM_DEPENDENCIAS = "INSERT INTO TBFuncionario (nome,cargo,ramal) VALUES ('Pedro Pafuncio', 'Gerentre', '7894')";
 
-        private const string INSERIR_EVENTO = "INSERT INTO TBEvento (data_inicio,data_termino,funcionario_id,sala_id) VALUES (GETDATE(),GETDATE(),2,2)";
+        private const string INSERIR_EVENTO = "INSERT INTO TBEvento (data_inicio,data_termino,funcionario_id,sala_id) VALUES (Convert(datetime,'2020-03-24 14:00:00'),Convert(datetime,'2020-03-24 16:00:00'),2,2)";
 
         public static void POPULAR_BANCO()
         {
