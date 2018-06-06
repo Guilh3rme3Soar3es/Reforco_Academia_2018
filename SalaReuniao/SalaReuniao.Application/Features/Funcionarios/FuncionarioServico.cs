@@ -1,4 +1,5 @@
-﻿using SalaReuniao.Domain.Exceptions;
+﻿using SalaReuniao.Application.Features.Eventos;
+using SalaReuniao.Domain.Exceptions;
 using SalaReuniao.Domain.Features.Funcionarios;
 using System;
 using System.Collections.Generic;
@@ -11,23 +12,27 @@ namespace SalaReuniao.Application.Features.Funcionarios
     public class FuncionarioServico : IFuncionarioServico
     {
         private IFuncionarioRepositorio _funcionarioRepositorio;
+        private IEventoServico _eventoservico;
 
-        public FuncionarioServico(IFuncionarioRepositorio funcionarioRepositorio)
+        public FuncionarioServico(IFuncionarioRepositorio funcionarioRepositorio, IEventoServico eventoservico)
         {
             _funcionarioRepositorio = funcionarioRepositorio;
+            _eventoservico = eventoservico;
         }
 
-        public Funcionario Adicionar(Funcionario sala)
+        public Funcionario Adicionar(Funcionario funcionario)
         {
-            sala.Validar();
-            return _funcionarioRepositorio.Salvar(sala);
+            funcionario.Validar();
+            return _funcionarioRepositorio.Salvar(funcionario);
         }
 
-        public void Deletar(Funcionario sala)
+        public void Deletar(Funcionario funcionario)
         {
-            if (sala.Id <= 0)
+            if (funcionario.Id <= 0)
                 throw new IdentifierUndefinedException();
-            _funcionarioRepositorio.Deletar(sala);
+            if (_eventoservico.CarregarPorFuncionarios(funcionario.Id).Count() > 0)
+                throw new FuncionarioRelacionadoComEventoException();
+            _funcionarioRepositorio.Deletar(funcionario);
         }
 
         public Funcionario Carregar(long id)
@@ -42,12 +47,12 @@ namespace SalaReuniao.Application.Features.Funcionarios
             return _funcionarioRepositorio.CarregarTodos();
         }
 
-        public Funcionario Atualizar(Funcionario sala)
+        public Funcionario Atualizar(Funcionario funcionario)
         {
-            if (sala.Id <= 0)
+            if (funcionario.Id <= 0)
                 throw new IdentifierUndefinedException();
-            sala.Validar();
-            return _funcionarioRepositorio.Atualizar(sala);
+            funcionario.Validar();
+            return _funcionarioRepositorio.Atualizar(funcionario);
         }
     }
 }

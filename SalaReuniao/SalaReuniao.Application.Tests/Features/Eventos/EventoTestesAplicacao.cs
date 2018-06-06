@@ -59,6 +59,20 @@ namespace SalaReuniao.Application.Tests.Features.Eventos
         }
 
         [Test]
+        public void Teste_EventoServico_SalvarEventoEmHorarioOcupado_DeveSerThrowException()
+        {
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _mockRepositorio.Setup(br => br.Salvar(_evento)).Returns(_evento);
+            _mockRepositorio.Setup(br => br.CarregarPorHorario(_evento)).Returns(new List<Evento> { _evento });
+
+            Action comparation = () => _servico.Adicionar(_evento);
+
+            comparation.Should().Throw<EventoEmHorarioOcupadoException>();
+            _mockRepositorio.Verify(br => br.CarregarPorHorario(_evento));
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
         public void Teste_EventoServico_AtualizarEvento_DeveSerOk()
         {
             _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
@@ -93,6 +107,21 @@ namespace SalaReuniao.Application.Tests.Features.Eventos
             Action comparation = () => _servico.Atualizar(_evento);
 
             comparation.Should().Throw<EventoDataInicioForaHorarioDoLimiteException>();
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_EventoServico_AtualizarEventoEmHorarioOcupado_DeveSerThrowException()
+        {
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _evento.Id = 1;
+            _mockRepositorio.Setup(br => br.Atualizar(_evento));
+            _mockRepositorio.Setup(br => br.CarregarPorHorario(_evento)).Returns(new List<Evento> { _evento });
+
+            Action comparation = () => _servico.Atualizar(_evento);
+
+            comparation.Should().Throw<EventoEmHorarioOcupadoException>();
+            _mockRepositorio.Verify(br => br.CarregarPorHorario(_evento));
             _mockRepositorio.VerifyNoOtherCalls();
         }
 
@@ -154,6 +183,58 @@ namespace SalaReuniao.Application.Tests.Features.Eventos
 
             comparation.Should().Throw<IdentifierUndefinedException>();
             _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_EventoServico_CarregarPorFuncionarioComIdInvalido_DeveSerThrowException()
+        {
+            _fakeFuncionario.Setup(f => f.Id).Returns(0);
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _mockRepositorio.Setup(br => br.CarregarPorFuncionario(_evento.Funcionario.Id));
+
+            Action comparation = () => _servico.CarregarPorFuncionarios(_evento.Funcionario.Id);
+
+            comparation.Should().Throw<IdentifierUndefinedException>();
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_EventoServico_CarregarPorFuncionario_DeveSerOk()
+        {
+            _fakeFuncionario.Setup(f => f.Id).Returns(1);
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _mockRepositorio.Setup(br => br.CarregarPorFuncionario(_evento.Funcionario.Id)).Returns(new List<Evento> { _evento});
+
+            var listaEventos = _servico.CarregarPorFuncionarios(_evento.Funcionario.Id);
+
+            listaEventos.Should().NotBeNullOrEmpty();
+            _mockRepositorio.Verify(br => br.CarregarPorFuncionario(_evento.Funcionario.Id));
+        }
+
+        [Test]
+        public void Teste_EventoServico_CarregarPorSalaComIdInvalido_DeveSerThrowException()
+        {
+            _fakeSala.Setup(s => s.Id).Returns(0);
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _mockRepositorio.Setup(br => br.CarregarPorSala(_evento.Sala.Id));
+
+            Action comparation = () => _servico.CarregarPorSala(_evento.Sala.Id);
+
+            comparation.Should().Throw<IdentifierUndefinedException>();
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_EventoServico_CarregarPorSala_DeveSerOk()
+        {
+            _fakeSala.Setup(s => s.Id).Returns(1);
+            _evento = ObjectMother.RetorneEventoExistenteOk(_fakeFuncionario.Object, _fakeSala.Object);
+            _mockRepositorio.Setup(br => br.CarregarPorSala(_evento.Sala.Id)).Returns(new List<Evento> { _evento });
+
+            var listaEventos = _servico.CarregarPorSala(_evento.Sala.Id);
+
+            listaEventos.Should().NotBeNullOrEmpty();
+            _mockRepositorio.Verify(br => br.CarregarPorSala(_evento.Sala.Id));
         }
     }
 }

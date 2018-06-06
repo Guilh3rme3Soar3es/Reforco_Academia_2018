@@ -1,10 +1,13 @@
 ﻿using FluentAssertions;
 using Moq;
 using NUnit.Framework;
+using SalaReuniao.Application.Features.Eventos;
 using SalaReuniao.Application.Features.Funcionarios;
 using SalaReuniao.Common.Common.Features.ObjectMothers;
 using SalaReuniao.Domain.Exceptions;
+using SalaReuniao.Domain.Features.Eventos;
 using SalaReuniao.Domain.Features.Funcionarios;
+using SalaReuniao.Domain.Features.Salas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,15 +20,23 @@ namespace SalaReuniao.Application.Tests.Features.Funcionarios
     public class FuncionarioTestesAplicacao
     {
         private Mock<IFuncionarioRepositorio> _mockRepositorio;
+        private Mock<IEventoServico> _mockEventoServico;
         private IFuncionarioServico _servico;
 
         private Funcionario _funcionario;
+        private Sala _sala;
+        private Evento _evento;
 
         [SetUp]
         public void Initialize()
         {
             _mockRepositorio = new Mock<IFuncionarioRepositorio>();
-            _servico = new FuncionarioServico(_mockRepositorio.Object);
+            _mockEventoServico = new Mock<IEventoServico>();
+            _servico = new FuncionarioServico(_mockRepositorio.Object, _mockEventoServico.Object);
+
+            _funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _evento = ObjectMother.RetorneEventoExistenteOk(_funcionario,_sala);
         }
 
         [Test]
@@ -148,6 +159,20 @@ namespace SalaReuniao.Application.Tests.Features.Funcionarios
             Action comparation = () => _servico.Deletar(_funcionario);
 
             comparation.Should().Throw<IdentifierUndefinedException>();
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_FuncionarioServico_DeletarFuncionarioRelacionadoComEvento_DeveSerThrowException()
+        {
+            _funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            _mockRepositorio.Setup(br => br.Deletar(_funcionario));
+            _mockEventoServico.Setup(es => es.CarregarPorFuncionarios(_funcionario.Id)).Returns(new List<Evento> { _evento });
+
+            Action comparation = () => _servico.Deletar(_funcionario);
+
+            comparation.Should().Throw<FuncionarioRelacionadoComEventoException>();
+            _mockEventoServico.Verify(es => es.CarregarPorFuncionarios(_funcionario.Id));
             _mockRepositorio.VerifyNoOtherCalls();
         }
     }

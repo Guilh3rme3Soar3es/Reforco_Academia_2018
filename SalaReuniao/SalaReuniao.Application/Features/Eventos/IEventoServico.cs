@@ -14,5 +14,7 @@ namespace SalaReuniao.Application.Features.Eventos
         Evento Carregar(long id);
         IEnumerable<Evento> CarregarTodos();
         void Deletar(Evento evento);
+        IEnumerable<Evento> CarregarPorFuncionarios(long idFuncionario);
+        IEnumerable<Evento> CarregarPorSala(long idSala);
     }
 }

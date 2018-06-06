@@ -38,6 +38,10 @@ namespace SalaReuniao.Infra.Data.Features.Eventos
 
         private const string _deletar = "DELETE FROM TBEvento WHERE id_evento = @IdEvento";
 
+        private const string _carregarPorFuncionario = "SELECT * FROM TBEvento INNER JOIN TBFuncionario ON funcionario_id = id_funcionario INNER JOIN TBSala ON sala_id = id_sala WHERE funcionario_id = @IdFuncionario";
+
+        private const string _carregarPorSala = "SELECT * FROM TBEvento INNER JOIN TBFuncionario ON funcionario_id = id_funcionario INNER JOIN TBSala ON sala_id = id_sala WHERE sala_id = @IdSala";
+
         #endregion#Scripts
 
         public void Deletar(Evento evento)
@@ -85,6 +89,20 @@ namespace SalaReuniao.Infra.Data.Features.Eventos
             return evento;
         }
 
+        public IEnumerable<Evento> CarregarPorFuncionario(long idFuncionario)
+        {
+            if (idFuncionario <= 0)
+                throw new IdentifierUndefinedException();
+            return Db.GetAll(_carregarPorFuncionario, Make, new object[] { "@IdFuncionario ", idFuncionario });
+        }
+
+        public IEnumerable<Evento> CarregarPorSala(long idSala)
+        {
+            if (idSala <= 0)
+                throw new IdentifierUndefinedException();
+            return Db.GetAll(_carregarPorSala, Make, new object[] { "@IdSala ", idSala });
+        }
+
         private static Func<IDataReader, Evento> Make = reader =>
            new Evento
            {
@@ -117,5 +135,7 @@ namespace SalaReuniao.Infra.Data.Features.Eventos
                 "@Sala_Id", evento.Sala.Id
             };
         }
+
+        
     }
 }

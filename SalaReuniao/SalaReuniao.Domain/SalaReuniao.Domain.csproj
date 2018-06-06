@@ -53,6 +53,7 @@
     <Compile Include="Features\Eventos\EventoDataTerminoDiaNãoPermitidoException.cs" />
     <Compile Include="Features\Eventos\EventoDataTerminoHorarioForaDoLimite.cs" />
     <Compile Include="Features\Eventos\EventoDataTerminoInvalidaException.cs" />
+    <Compile Include="Features\Eventos\EventoEmHorarioOcupadoException.cs" />
     <Compile Include="Features\Eventos\EventoSalaNullaException.cs" />
     <Compile Include="Features\Eventos\IEventoRepositorio.cs" />
     <Compile Include="Features\Funcionarios\Funcionario.cs" />
@@ -62,11 +63,13 @@
     <Compile Include="Features\Funcionarios\FuncionarioNomeNuloOuVazioException.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioRamalInvalidoException.cs" />
     <Compile Include="Features\Funcionarios\FuncionarioRamalNuloOuVazioException.cs" />
+    <Compile Include="Features\Funcionarios\FuncionarioRelacionadoComEventoException.cs" />
     <Compile Include="Features\Funcionarios\IFuncionarioRepositorio.cs" />
     <Compile Include="Features\Salas\ISalaRepositorio.cs" />
     <Compile Include="Features\Salas\Sala.cs" />
     <Compile Include="Features\Salas\SalaNumeroLugaresInvalido.cs" />
     <Compile Include="Features\Salas\SalaNumeroLugaresNaoInformado.cs" />
+    <Compile Include="Features\Salas\SalaRelacionadaComEventoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

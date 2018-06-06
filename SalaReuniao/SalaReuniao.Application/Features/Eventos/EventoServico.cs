@@ -17,17 +17,19 @@ namespace SalaReuniao.Application.Features.Eventos
             _eventoRepositorio = eventoRepositorio;
         }
 
-        public Evento Adicionar(Evento sala)
+        public Evento Adicionar(Evento evento)
         {
-            sala.Validar();
-            return _eventoRepositorio.Salvar(sala);
+            evento.Validar();
+            if (_eventoRepositorio.CarregarPorHorario(evento).Count() > 0)
+                throw new EventoEmHorarioOcupadoException();
+            return _eventoRepositorio.Salvar(evento);
         }
 
-        public void Deletar(Evento sala)
+        public void Deletar(Evento evento)
         {
-            if (sala.Id <= 0)
+            if (evento.Id <= 0)
                 throw new IdentifierUndefinedException();
-            _eventoRepositorio.Deletar(sala);
+            _eventoRepositorio.Deletar(evento);
         }
 
         public Evento Carregar(long id)
@@ -42,12 +44,28 @@ namespace SalaReuniao.Application.Features.Eventos
             return _eventoRepositorio.CarregarTodos();
         }
 
-        public Evento Atualizar(Evento sala)
+        public Evento Atualizar(Evento evento)
         {
-            if (sala.Id <= 0)
+            if (evento.Id <= 0)
                 throw new IdentifierUndefinedException();
-            sala.Validar();
-            return _eventoRepositorio.Atualizar(sala);
+            evento.Validar();
+            if (_eventoRepositorio.CarregarPorHorario(evento).Count() > 0)
+                throw new EventoEmHorarioOcupadoException();
+            return _eventoRepositorio.Atualizar(evento);
+        }
+
+        public IEnumerable<Evento> CarregarPorFuncionarios(long idFuncionario)
+        {
+            if (idFuncionario <= 0)
+                throw new IdentifierUndefinedException();
+            return _eventoRepositorio.CarregarPorFuncionario(idFuncionario);
+        }
+
+        public IEnumerable<Evento> CarregarPorSala(long idSala)
+        {
+            if (idSala <= 0)
+                throw new IdentifierUndefinedException();
+            return _eventoRepositorio.CarregarPorSala(idSala);
         }
     }
 }

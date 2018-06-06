@@ -8,7 +8,7 @@ namespace SalaReuniao.Domain.Common
 {
     public abstract class Entidade
     {
-        public long Id { get; set; }
+        public virtual long Id { get; set; }
 
         public abstract void Validar();
     }

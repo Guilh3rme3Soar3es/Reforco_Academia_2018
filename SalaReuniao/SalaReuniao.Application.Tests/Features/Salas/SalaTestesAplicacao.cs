@@ -1,9 +1,12 @@
 ﻿using FluentAssertions;
 using Moq;
 using NUnit.Framework;
+using SalaReuniao.Application.Features.Eventos;
 using SalaReuniao.Application.Features.Salas;
 using SalaReuniao.Common.Common.Features.ObjectMothers;
 using SalaReuniao.Domain.Exceptions;
+using SalaReuniao.Domain.Features.Eventos;
+using SalaReuniao.Domain.Features.Funcionarios;
 using SalaReuniao.Domain.Features.Salas;
 using System;
 using System.Collections.Generic;
@@ -17,15 +20,23 @@ namespace SalaReuniao.Application.Tests.Features.Salas
     public class SalaTestesAplicacao
     {
         private Mock<ISalaRepositorio> _mockRepositorio;
+        private Mock<IEventoServico> _mockEventoServico;
         private ISalaServico _servico;
 
+        private Funcionario _funcionario;
         private Sala _sala;
+        private Evento _evento;
 
         [SetUp]
         public void Initialize()
         {
+            _mockEventoServico = new Mock<IEventoServico>();
             _mockRepositorio = new Mock<ISalaRepositorio>();
-            _servico = new SalaServico(_mockRepositorio.Object);
+            _servico = new SalaServico(_mockRepositorio.Object, _mockEventoServico.Object);
+
+            _funcionario = ObjectMother.RetorneFuncionarioExistenteOk();
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _evento = ObjectMother.RetorneEventoExistenteOk(_funcionario, _sala);
         }
 
         [Test]
@@ -148,6 +159,20 @@ namespace SalaReuniao.Application.Tests.Features.Salas
             Action comparation = () => _servico.Deletar(_sala);
 
             comparation.Should().Throw<IdentifierUndefinedException>();
+            _mockRepositorio.VerifyNoOtherCalls();
+        }
+
+        [Test]
+        public void Teste_SalaServico_DeletarSalaRelacionadaComEvento_DeveSerThrowException()
+        {
+            _sala = ObjectMother.RetorneSalaExistenteOk();
+            _mockRepositorio.Setup(br => br.Deletar(_sala));
+            _mockEventoServico.Setup(es => es.CarregarPorSala(_sala.Id)).Returns(new List<Evento> { _evento });
+
+            Action comparation = () => _servico.Deletar(_sala);
+
+            comparation.Should().Throw<SalaRelacionadaComEventoException>();
+            _mockEventoServico.Verify(es => es.CarregarPorSala(_sala.Id));
             _mockRepositorio.VerifyNoOtherCalls();
         }
     }
