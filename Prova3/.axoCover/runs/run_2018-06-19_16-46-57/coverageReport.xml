@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.6.0.0">
+  <Summary numSequencePoints="87" visitedSequencePoints="76" numBranchPoints="42" visitedBranchPoints="38" sequenceCoverage="87.36" branchCoverage="90.48" maxCyclomaticComplexity="9" minCyclomaticComplexity="1" maxCrapScore="9" minCrapScore="1" visitedClasses="5" numClasses="5" visitedMethods="18" numMethods="22" />
+  <Modules>
+    <Module hash="07-FB-00-ED-02-0D-AB-E3-F0-48-97-8B-99-EA-2A-67-93-6A-C0-67">
+      <Summary numSequencePoints="39" visitedSequencePoints="37" numBranchPoints="26" visitedBranchPoints="25" sequenceCoverage="94.87" branchCoverage="96.15" maxCyclomaticComplexity="9" minCyclomaticComplexity="0" maxCrapScore="9" minCrapScore="0" visitedClasses="4" numClasses="4" visitedMethods="5" numMethods="6" />
+      <ModulePath>C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Domain.Tests\bin\Debug\Prova3.Domain.dll</ModulePath>
+      <ModuleTime>2018-06-19T19:45:11.5877962Z</ModuleTime>
+      <ModuleName>Prova3.Domain</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Domain\Features\Students\Student.cs" />
+        <File uid="6" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Domain\Features\Results\Result.cs" />
+        <File uid="9" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Domain\Features\Evaluations\Evaluation.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="10" numBranchPoints="10" visitedBranchPoints="9" sequenceCoverage="83.33" branchCoverage="90" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" maxCrapScore="5" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+          <FullName>Prova3.Domain.Features.Students.Student</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Int32 Prova3.Domain.Features.Students.Student::get_Id()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::set_Id(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.String Prova3.Domain.Features.Students.Student::get_Name()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::set_Name(System.String)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.Int32 Prova3.Domain.Features.Students.Student::get_Age()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::set_Age(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Double Prova3.Domain.Features.Students.Student::get_Average()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::set_Average(System.Double)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="5" nPathComplexity="16" sequenceCoverage="100" branchCoverage="100" crapScore="5" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" maxCrapScore="5" minCrapScore="5" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::Validate()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="1" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="2" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="44" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="3" ordinal="2" offset="16" sl="21" sc="17" el="21" ec="60" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="4" ordinal="3" offset="22" sl="22" sc="13" el="22" ec="35" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="5" ordinal="4" offset="41" sl="23" sc="17" el="23" ec="64" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="6" ordinal="5" offset="47" sl="24" sc="13" el="24" ec="26" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="7" ordinal="6" offset="60" sl="25" sc="17" el="25" ec="59" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="8" ordinal="7" offset="66" sl="26" sc="13" el="26" ec="25" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="9" ordinal="8" offset="79" sl="27" sc="17" el="27" ec="56" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="10" ordinal="9" offset="85" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="11" ordinal="0" offset="14" sl="20" path="0" offsetend="16" fileid="1" />
+                <BranchPoint vc="4" uspid="12" ordinal="1" offset="14" sl="20" path="1" offsetend="22" fileid="1" />
+                <BranchPoint vc="1" uspid="13" ordinal="2" offset="39" sl="22" path="0" offsetend="41" fileid="1" />
+                <BranchPoint vc="3" uspid="14" ordinal="3" offset="39" sl="22" path="1" offsetend="47" fileid="1" />
+                <BranchPoint vc="1" uspid="15" ordinal="4" offset="58" sl="24" path="0" offsetend="60" fileid="1" />
+                <BranchPoint vc="2" uspid="16" ordinal="5" offset="58" sl="24" path="1" offsetend="66" fileid="1" />
+                <BranchPoint vc="1" uspid="17" ordinal="6" offset="77" sl="26" path="0" offsetend="79" fileid="1" />
+                <BranchPoint vc="1" uspid="18" ordinal="7" offset="77" sl="26" path="1" offsetend="85" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="1" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::CalculateAverage()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" offset="0" sl="30" sc="9" el="30" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="20" ordinal="1" offset="1" sl="36" sc="9" el="36" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="19" ordinal="0" offset="0" sl="30" sc="9" el="30" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Students.Student::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="21" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="3" minCyclomaticComplexity="1" maxCrapScore="3" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Prova3.Domain.Features.Results.Result</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Int32 Prova3.Domain.Features.Results.Result::get_Id()</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Results.Result::set_Id(System.Int32)</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Double Prova3.Domain.Features.Results.Result::get_Note()</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Results.Result::set_Note(System.Double)</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663316</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Domain.Features.Results.Result::get_Student()</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663317</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Results.Result::set_Student(Prova3.Domain.Features.Students.Student)</Name>
+              <FileRef uid="6" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" crapScore="3" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" maxCrapScore="3" minCrapScore="3" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663318</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Results.Result::Validate()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="22" ordinal="0" offset="0" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4" uspid="23" ordinal="1" offset="1" sl="18" sc="13" el="18" ec="26" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1" uspid="24" ordinal="2" offset="22" sl="19" sc="17" el="19" ec="57" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="25" ordinal="3" offset="28" sl="20" sc="13" el="20" ec="33" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1" uspid="26" ordinal="4" offset="41" sl="21" sc="17" el="21" ec="56" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2" uspid="27" ordinal="5" offset="47" sl="22" sc="13" el="22" ec="32" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="28" ordinal="6" offset="59" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="29" ordinal="0" offset="20" sl="18" path="0" offsetend="22" fileid="6" />
+                <BranchPoint vc="3" uspid="30" ordinal="1" offset="20" sl="18" path="1" offsetend="28" fileid="6" />
+                <BranchPoint vc="1" uspid="31" ordinal="2" offset="39" sl="20" path="0" offsetend="41" fileid="6" />
+                <BranchPoint vc="2" uspid="32" ordinal="3" offset="39" sl="20" path="1" offsetend="47" fileid="6" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="4" uspid="22" ordinal="0" offset="0" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Results.Result::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="33" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="18" visitedSequencePoints="18" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="9" minCyclomaticComplexity="1" maxCrapScore="9" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Prova3.Domain.Features.Evaluations.Evaluation</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Int32 Prova3.Domain.Features.Evaluations.Evaluation::get_Id()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663323</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::set_Id(System.Int32)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.String Prova3.Domain.Features.Evaluations.Evaluation::get_Subject()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::set_Subject(System.String)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.DateTime Prova3.Domain.Features.Evaluations.Evaluation::get_Date()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::set_Date(System.DateTime)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt; Prova3.Domain.Features.Evaluations.Evaluation::get_Results()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::set_Results(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="9" nPathComplexity="16" sequenceCoverage="100" branchCoverage="100" crapScore="9" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="18" visitedSequencePoints="18" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="9" minCyclomaticComplexity="9" maxCrapScore="9" minCrapScore="9" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::Validate()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="34" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="35" ordinal="1" offset="1" sl="19" sc="13" el="19" ec="47" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="1" uspid="36" ordinal="2" offset="16" sl="20" sc="17" el="20" ec="66" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="5" uspid="37" ordinal="3" offset="22" sl="21" sc="13" el="21" ec="38" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="1" uspid="38" ordinal="4" offset="41" sl="22" sc="17" el="22" ec="70" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="39" ordinal="5" offset="47" sl="23" sc="13" el="23" ec="54" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="3" uspid="40" ordinal="6" offset="76" sl="24" sc="13" el="24" ec="14" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="41" ordinal="7" offset="77" sl="25" sc="17" el="25" ec="80" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="1" uspid="42" ordinal="8" offset="159" sl="26" sc="21" el="26" ec="78" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="43" ordinal="9" offset="165" sl="27" sc="13" el="27" ec="14" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="44" ordinal="10" offset="166" sl="28" sc="13" el="28" ec="20" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="45" ordinal="11" offset="167" sl="28" sc="36" el="28" ec="43" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="46" ordinal="12" offset="182" sl="28" sc="22" el="28" ec="32" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="47" ordinal="13" offset="191" sl="29" sc="13" el="29" ec="14" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="48" ordinal="14" offset="192" sl="30" sc="17" el="30" ec="35" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="49" ordinal="15" offset="200" sl="31" sc="13" el="31" ec="14" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="50" ordinal="16" offset="201" sl="28" sc="33" el="28" ec="35" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="51" ordinal="17" offset="227" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="52" ordinal="0" offset="14" sl="19" path="0" offsetend="16" fileid="9" />
+                <BranchPoint vc="5" uspid="53" ordinal="1" offset="14" sl="19" path="1" offsetend="22" fileid="9" />
+                <BranchPoint vc="1" uspid="54" ordinal="2" offset="39" sl="21" path="0" offsetend="41" fileid="9" />
+                <BranchPoint vc="4" uspid="55" ordinal="3" offset="39" sl="21" path="1" offsetend="47" fileid="9" />
+                <BranchPoint vc="3" uspid="58" ordinal="6" offset="74" sl="23" path="0" offsetend="76" fileid="9" />
+                <BranchPoint vc="1" uspid="59" ordinal="7" offset="74" sl="23" path="1" offsetend="166" fileid="9" />
+                <BranchPoint vc="1" uspid="64" ordinal="12" offset="157" sl="25" path="0" offsetend="159" fileid="9" />
+                <BranchPoint vc="2" uspid="65" ordinal="13" offset="157" sl="25" path="1" offsetend="165" fileid="9" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="6" uspid="34" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="9" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="68" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>Prova3.Domain.Features.Evaluations.Evaluation/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="69" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663337</MetadataToken>
+              <Name>System.Void Prova3.Domain.Features.Evaluations.Evaluation/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="70" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Int32 Prova3.Domain.Features.Evaluations.Evaluation/&lt;&gt;c::&lt;Validate&gt;b__16_0(Prova3.Domain.Features.Results.Result)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="71" ordinal="0" offset="0" sl="25" sc="42" el="25" ec="54" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="4" uspid="71" ordinal="0" offset="0" sl="25" sc="42" el="25" ec="54" bec="0" bev="0" fileid="9" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Boolean Prova3.Domain.Features.Evaluations.Evaluation/&lt;&gt;c::&lt;Validate&gt;b__16_1(System.Linq.IGrouping`2&lt;System.Int32,Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="72" ordinal="0" offset="0" sl="25" sc="65" el="25" ec="78" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="72" ordinal="0" offset="0" sl="25" sc="65" el="25" ec="78" bec="0" bev="0" fileid="9" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="44-A6-C9-01-80-AD-8B-6D-09-6F-33-01-9C-3E-AA-6A-08-88-66-59">
+      <Summary numSequencePoints="48" visitedSequencePoints="39" numBranchPoints="16" visitedBranchPoints="13" sequenceCoverage="81.25" branchCoverage="81.25" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="13" numMethods="16" />
+      <ModulePath>C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Domain.Tests\bin\Debug\Prova3.Common.Tests.dll</ModulePath>
+      <ModuleTime>2018-06-19T19:46:15.2107909Z</ModuleTime>
+      <ModuleName>Prova3.Common.Tests</ModuleName>
+      <Files>
+        <File uid="29" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\Features\Evaluations\ObjectMother.cs" />
+        <File uid="30" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\Features\Results\ObjectMother.cs" />
+        <File uid="31" fullPath="C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\Features\Students\ObjectMother.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="48" visitedSequencePoints="39" numBranchPoints="16" visitedBranchPoints="13" sequenceCoverage="81.25" branchCoverage="81.25" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="13" numMethods="16" />
+          <FullName>Prova3.Common.Tests.Features.ObjectMothers.ObjectMother</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetNewValidEvaluation(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="73" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="2" uspid="74" ordinal="1" offset="1" sl="15" sc="13" el="20" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="2" uspid="75" ordinal="2" offset="58" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="73" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetNewValidEvaluationNoresults()</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="76" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="77" ordinal="1" offset="1" sl="25" sc="13" el="30" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="78" ordinal="2" offset="62" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="76" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetExistentEvaluation(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="79" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="80" ordinal="1" offset="1" sl="35" sc="13" el="41" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="81" ordinal="2" offset="66" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="79" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidEvaluationWithUninformedSubject(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="82" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="83" ordinal="1" offset="1" sl="46" sc="13" el="51" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="84" ordinal="2" offset="54" sl="52" sc="9" el="52" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="82" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidEvaluationWithSubjectLengthOverflow(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="85" ordinal="0" offset="0" sl="55" sc="9" el="55" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="86" ordinal="1" offset="1" sl="56" sc="13" el="61" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="87" ordinal="2" offset="58" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="85" ordinal="0" offset="0" sl="55" sc="9" el="55" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>Prova3.Domain.Features.Evaluations.Evaluation Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidEvaluationResulstWithEqualsStudents(System.Collections.Generic.List`1&lt;Prova3.Domain.Features.Results.Result&gt;)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="88" ordinal="0" offset="0" sl="65" sc="9" el="65" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="89" ordinal="1" offset="1" sl="66" sc="13" el="71" ec="15" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="1" uspid="90" ordinal="2" offset="58" sl="72" sc="9" el="72" ec="10" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="88" ordinal="0" offset="0" sl="65" sc="9" el="65" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>Prova3.Domain.Features.Results.Result Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetNewValidResult(Prova3.Domain.Features.Students.Student)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="91" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="2" uspid="92" ordinal="1" offset="1" sl="15" sc="13" el="19" ec="15" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="2" uspid="93" ordinal="2" offset="33" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="91" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>Prova3.Domain.Features.Results.Result Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetExistentValidResult(Prova3.Domain.Features.Students.Student)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="94" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="95" ordinal="1" offset="1" sl="24" sc="13" el="29" ec="15" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="96" ordinal="2" offset="41" sl="30" sc="9" el="30" ec="10" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="94" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>Prova3.Domain.Features.Results.Result Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidResultWithNegativeNote(Prova3.Domain.Features.Students.Student)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="97" ordinal="0" offset="0" sl="33" sc="9" el="33" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="98" ordinal="1" offset="1" sl="34" sc="13" el="38" ec="15" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="99" ordinal="2" offset="33" sl="39" sc="9" el="39" ec="10" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="97" ordinal="0" offset="0" sl="33" sc="9" el="33" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>Prova3.Domain.Features.Results.Result Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidResultWithNullStudent()</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="100" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="101" ordinal="1" offset="1" sl="43" sc="13" el="47" ec="15" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="1" uspid="102" ordinal="2" offset="33" sl="48" sc="9" el="48" ec="10" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="100" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetNewValidStudent()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="103" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="104" ordinal="1" offset="1" sl="14" sc="13" el="18" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="105" ordinal="2" offset="30" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="103" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetExistenValidStudent()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="106" ordinal="0" offset="0" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="0" uspid="107" ordinal="1" offset="1" sl="23" sc="13" el="28" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="0" uspid="108" ordinal="2" offset="38" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="106" ordinal="0" offset="0" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidStudentWithUninformedName()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="109" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="110" ordinal="1" offset="1" sl="33" sc="13" el="37" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="111" ordinal="2" offset="26" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="109" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidStudentWithNameOverflow()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="112" ordinal="0" offset="0" sl="41" sc="9" el="41" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="113" ordinal="1" offset="1" sl="42" sc="13" el="46" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="114" ordinal="2" offset="30" sl="47" sc="9" el="47" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="112" ordinal="0" offset="0" sl="41" sc="9" el="41" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidStudentWithUninformedAge()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="115" ordinal="0" offset="0" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="116" ordinal="1" offset="1" sl="51" sc="13" el="54" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="117" ordinal="2" offset="21" sl="55" sc="9" el="55" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="115" ordinal="0" offset="0" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>Prova3.Domain.Features.Students.Student Prova3.Common.Tests.Features.ObjectMothers.ObjectMother::GetInvalidStudentWithInvalidAge()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="118" ordinal="0" offset="0" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="119" ordinal="1" offset="1" sl="59" sc="13" el="63" ec="15" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="1" uspid="120" ordinal="2" offset="29" sl="64" sc="9" el="64" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="118" ordinal="0" offset="0" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

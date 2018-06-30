@@ -1,0 +1,19 @@
+﻿** Destaques
+     Tabelas que serão recriadas
+       Nenhum
+     Índices clusterizados que serão removidos
+       Nenhum
+     Índices clusterizados que serão criados
+       Nenhum
+     Possíveis problemas de dados
+       Nenhum
+
+** Ações do usuário
+     Criar
+       [dbo].[Evaluation] (Tabela)
+       [dbo].[result] (Tabela)
+       [dbo].[student] (Tabela)
+       [dbo].[FK_Result_evaluation] (Chave Estrangeira)
+       [dbo].[FK_Result_student] (Chave Estrangeira)
+
+** Ações de suporte

@@ -1,0 +1,20 @@
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Common.Tests.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Common.Tests.pdb
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Domain.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Domain.pdb
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.csprojResolveAssemblyReference.cache
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.pdb
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Infra.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Infra.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Common.Tests.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Common.Tests.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Domain.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Infra.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Domain.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\bin\Debug\Prova3.Infra.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.csproj.CopyComplete
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Common.Tests\obj\Debug\Prova3.Common.Tests.pdb

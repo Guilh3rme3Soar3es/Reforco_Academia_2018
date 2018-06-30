@@ -1,0 +1,11 @@
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Database\bin\Debug\Prova3.Database.dacpac
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Database\bin\Debug\Prova3.Database.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Database\bin\Debug\Prova3.Database.pdb
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Database\obj\Debug\Prova3.Database.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Database\obj\Debug\Prova3.Database.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\bin\Debug\Prova3.Database.dacpac
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\bin\Debug\Prova3.Database.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\bin\Debug\Prova3.Database.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\obj\Debug\Prova3.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\obj\Debug\Prova3.Database.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Database\obj\Debug\Prova3.Database.pdb

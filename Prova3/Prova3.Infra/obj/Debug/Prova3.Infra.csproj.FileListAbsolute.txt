@@ -1,0 +1,11 @@
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Infra\bin\Debug\Prova3.Infra.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Infra\bin\Debug\Prova3.Infra.pdb
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.csprojResolveAssemblyReference.cache
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.dll
+C:\Users\ndduser\Desktop\AcademiaProgramador2018\GuilhermeProva\ProvaTDD\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\bin\Debug\Prova3.Infra.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\bin\Debug\Prova3.Infra.pdb
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.csprojResolveAssemblyReference.cache
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.dll
+C:\Users\Guilherme Soares\Desktop\Prova3\Prova3\Prova3.Infra\obj\Debug\Prova3.Infra.pdb
